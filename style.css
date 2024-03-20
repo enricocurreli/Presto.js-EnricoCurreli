@@ -1,0 +1,313 @@
+
+/* Variabili CSS:  */
+
+:root{
+    --color-P: darkred; 
+    --color-S: white;
+    --color-A: rgb(255, 230, 0);
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  
+  h1{
+    font-family: "Ephesis", cursive;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 7px ;
+    font-size: 500%;
+    color: black;
+  }
+  
+  p {
+    font-family: "Bitter", serif;
+    font-style: italic;
+    font-weight:600;
+    color: black;
+  }
+  .stelline{
+    color: black;
+  }
+  .resort-text{
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .navbar-toggler{
+    border: none;
+    
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  
+  .nav-cont{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  .nav-item{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+    
+  }
+
+  .nav-scrolled {
+    margin: 2vh 25vw;
+    background-color: #FAFAFA!important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+   
+  }
+
+  .transition{
+    transition: .7s;
+  }   
+
+  .btn:first-child:active{
+    border: none;
+  }
+  
+  .btn_nav{
+    background: #CC2936 !important;
+    color: white !important;
+    
+  
+  }
+  .btn_nav:hover{
+    color: #CC2936;
+    border: 2px solid #CC2936;
+  }
+  
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    
+    
+    border: 1px solid white;
+  }
+  
+  .slide1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/IMG_2047.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  .slide2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/piscinas.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  .slide3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/masua.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .carousel-item.active .carousel-caption {
+    opacity: 1;
+    top: 40%;
+  }
+  
+  .my_ctn1{
+    background: #FAFAFA;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    
+  }
+  
+  .h2_sect1{
+    font-size: 350%;
+    text-align: center;
+    letter-spacing: 5px;
+  
+  }
+  .p_sect1{
+    font-size: 130%;
+    text-align: center;
+  }
+  
+  .img_benessere1{
+    width: 100%;
+    
+  }
+  
+  .img_benessere2{
+    width: 80%;
+  }
+  
+  .h2benessere{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+  }
+  
+  .h2benessere2{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+    letter-spacing: 3px;
+  }
+  
+  .dropdown-toggle:after {
+    content: none
+  }
+  
+  .linkmtb{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  section.pricing {
+    background: #FAFAFA;
+    
+  }
+  
+  .pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .pricing .card-price .period {
+    font-size: 0.8rem;
+  }
+  
+  .pricing ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .pricing .text-muted {
+    opacity: 0.7;
+  }
+  
+  .pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+  
+  .card-body{
+    
+    border-radius: 2%;
+  }
+  
+  body1 {
+    background: #FAFAFA;
+    
+  }
+  
+  .bg-image {
+    background-image: url('media/fotocontatti.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .btn_cont{
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+  
+  .contatti{
+    padding-top: 10%
+  }
+
+  .boxNumeri{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid #CC2936;
+   
+    
+  }
+  
+  
+  .footer_d{
+    margin-top: 10%;
+    background: #FAFAFA;
+  }
+  
+  /* Hover Effects on Card */
+  
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+  }
+
+ 
