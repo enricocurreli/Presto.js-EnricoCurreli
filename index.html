@@ -25,11 +25,11 @@
     
     
     
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-primary transition">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-primary transition mx-0 ">
         <div class="container-fluid nav-cont">
           <a class="navbar-brand px-5" href="#" id="navbarBrand">
             <!-- <img src="" id="logoNav" class="ps-3 transition mt-0 pt-0" alt=""> -->
-            <h3 class="resort-text display-2" id="capNav"> I Corsari - Resort</h3>
+            <h3 class="resort-text display-3" id="capNav"> I Corsari - Resort</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <img src="media/icons8-menu-50.png" alt="">
@@ -263,7 +263,9 @@
       </div>
       
     </section> 
-    
+
+    <!--ESCURSIONI-->
+
     <section>
       <div class="container p-5" id="Escursioni">
         <div class="row mt-5">
@@ -399,6 +401,8 @@
               </div>
               
             </div>
+
+            <!--FINE ESCURSIONI-->
             
     </section>
           <!-- OFFERTE -->
@@ -415,8 +419,10 @@
     
               <div class="row justify-content-center">
     
-                <div class="col-12 col-md-5 mt-5">
-                  <div class="card">
+                <div class="col-12 col-md-5 mt-5 d-flex justify-content-center">
+                  <div class="card w-75" data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
                     <div class="card-body">
                       <img src="media/foto1offerte.jpeg" class="img_benessere1 shadow mt-5" alt="">
                       <h5 class="h2benessere2 mt-3">Omaggio
@@ -438,8 +444,10 @@
                   </div>
                 </div>
     
-                <div class="col-12 col-md-5 mt-5">
-                  <div class="card">
+                <div class="col-12 col-md-5 mt-5 d-flex justify-content-center">
+                  <div class="card w-75 d-flex justify-content-center" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
                     <div class="card-body">
                       <img src="media/fotopasqua.jpeg" class="img_benessere1 shadow mt-5" alt="">
                       <h5 class="h2benessere2 mt-3 mb-4 ms">Pasqua e Pasquetta</h5>
@@ -473,15 +481,15 @@
                 <div class="col-12 my-5">
                     <h2 class="h2benessere2 fs-1 mt-5 text-center border-bottom">NELLE ULTIME 24H</h2>
                 </div>
-                <div class="col-2  boxNumeri d-flex flex-column align-items-center justify-content-center shadow">
+                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow mb-4 w-75">
                     <h6 class="fs-5">PRENOTAZIONI:</h6>
                     <p class="fs-2" id="numBook">0</p>
                 </div>
-                <div class="col-2  boxNumeri d-flex flex-column align-items-center justify-content-center shadow">
+                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow mb-4 w-75">
                     <h6 class="fs-5">FAMIGLIE:</h6>
                     <p  class="fs-2" id="numFam">0</p>
                 </div>
-                <div class="col-2  boxNumeri d-flex flex-column align-items-center justify-content-center shadow">
+                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow w-75">
                     <h6 class="fs-5">COPPIE:</h6>
                     <p class="fs-2"id="numCouple">0</p>
                 </div>
@@ -579,20 +587,21 @@
           <div class="container-fluid footer_d px-0">
             
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border_footer m-0 p-0">
-              <div class="col mb-3 order-last order-md-first ps-5">
+              <div class="col-md-3 mb-3 order-last order-md-first ps-5">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                   <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 </a>
-                <h3 class="resort-text display-5 "> I Corsari - Resort</h3>
+                <h3 class="resort-text display-5 text-center "> I Corsari</h3>
+                <h3 class="resort-text display-5 text-center"> Resort</h3>
                 <h6 class="stelline text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h6>
                 <p class="text-body-secondary ms-2">Enrico Curreli © 2024 Company, Inc</p>
               </div>
               
         
           
-              <div class="col mb-3 me-auto">
+              <div class="col-md-3 mb-3">
                 
-                <ul class="nav flex-column align-items-end">
+                <ul class="nav flex-column align-items-center text-center">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
                   <li class="nav-item mb-2"><a href="#Attività" class="nav-link p-0 text-body-secondary">Attività</a></li>
                   <li class="nav-item mb-2"><a href="#Escursioni" class="nav-link p-0 text-body-secondary">Escursioni</a></li>
@@ -601,9 +610,9 @@
                 </ul>
               </div>
           
-              <div class="col mb-3">
+              <div class="col-md-3 mb-3">
                
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-center">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Copyright</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Use of Terms</a></li>
@@ -611,16 +620,16 @@
                 </ul>
               </div>
           
-              <div class="col mb-3">
+              <div class="col-md-3 mb-3">
                 
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
-                  <li class="nav-item mb-2">
+                <ul class="nav ">
+                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
+                  <li class="nav-item mb-2 p-2">
                     <p class="text-secondary"><i class="bi bi-telephone"></i> +39 123 456 7890 </p>
                   </li>
-                  <li class="nav-item mb-2">
+                  <li class="nav-item mb-2 p-2">
                     <p class="text-secondary"><i class="bi bi-geo-alt"></i> Via del Mare - Loc. Costa Verde 09031 Arbus, SU - Italia</p>
                   </li>
                 </ul>

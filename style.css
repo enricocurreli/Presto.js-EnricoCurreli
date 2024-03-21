@@ -63,10 +63,10 @@ body{
   }
 
   .nav-scrolled {
-    margin: 2vh 25vw;
+    
     background-color: #FAFAFA!important;
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    box-shadow: 5px 5px 26px #888888;
    
   }
 

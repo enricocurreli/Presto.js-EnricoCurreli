@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("nav-scrolled")
         navbarBrand.classList.add("transition")
         navbarBrand.innerHTML= `
-        <figcaption class="resort-text display-2"> I Corsari - Resort</figcaption>`
+        <h3 class="resort-text display-3"> I Corsari - Resort</h3>`
         
         
     }
