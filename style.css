@@ -194,12 +194,20 @@ body{
     letter-spacing: 3px;
   }
   .myDropMenu{
-    width: 195px;
-    height: 210px;
+    
+    border-radius: 0px 0px 10px 10px;
+    height: 200px;
     margin: 0px;
     border: 1px solid #CC2936;
+    text-align: center;
+    color: #CC2936 !important;
+    margin-left: 10% ;
+    margin-right: 10%;
    
     
+  }
+  .dropdown-item{
+    color: #CC2936 !important;
   }
 
   
