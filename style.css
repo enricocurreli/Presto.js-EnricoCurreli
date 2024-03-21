@@ -91,7 +91,7 @@ body{
     
   
   }
-  
+
   .btn_nav:hover{
     color: #CC2936;
     border: 2px solid #CC2936;
@@ -198,14 +198,11 @@ body{
     height: 210px;
     margin: 0px;
     border: 1px solid #CC2936;
+   
     
   }
 
-  .myDropMen::after{
-
-    background: ;
-
-  }
+  
   .dropdown-toggle::after {
     /* content: none; */
     color: #CC2936;

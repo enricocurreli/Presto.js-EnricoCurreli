@@ -65,23 +65,55 @@ function createInterval(elementId, finalNumber, frequency){
 // createInterval(numFam, 50, 105)
 // createInterval(numCouple, 30, 180)
 
-let check = false;
+// let check = false;
 
-let cntNum = document.querySelector("#cntNum")
+// let cntNum = document.querySelector("#cntNum")
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
     
-    if(window.scrollY > 800 && check == false){
+//     if(window.scrollY > 800 && check == false){
         
-        check = true
-        createInterval(numBook, 80, 60)
-        createInterval(numFam, 50, 105)
-        createInterval(numCouple, 30, 180)
+//         check = true
         
         
-    } else {
         
-    }
+//     } else {
+        
+//     }
     
+// })
+
+let isIntersected = false;
+
+//INTERSECTION OBSERVER NUMERI DINAMICI
+const intersectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach( (entry)=>{
+        if(entry.isIntersecting && isIntersected == false){
+            
+            createInterval(numBook, 80, 60)
+            createInterval(numFam, 50, 105)
+            createInterval(numCouple, 30, 180)
+
+            isIntersected = true;
+            setTimeout(() => {
+                isIntersected = false;
+            }, 10000);
+        }
+    } )
 })
 
+intersectionObserver.observe(numBook)
+intersectionObserver.observe(numFam)
+intersectionObserver.observe(numCouple)
+
+
+let offerte = document.querySelector("#Offerte");
+
+let proposte = [
+
+    {name: "Katana di Hattori Hanzo", categoria: "Accessori", prezzo: 500, img: "https://picsum.photos/200"},
+    {name: "Vaso Ming", categoria: "Arredamento", prezzo: 700, img: "https://picsum.photos/201"},
+
+
+
+]
