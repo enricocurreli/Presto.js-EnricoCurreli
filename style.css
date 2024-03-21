@@ -30,6 +30,12 @@ body{
     font-weight:600;
     color: black;
   }
+  h3{
+    font-family: "Bitter", serif;
+    font-style: normal;
+    font-weight:400;
+    color: black;
+  }
   .stelline{
     color: black;
   }
@@ -85,6 +91,7 @@ body{
     
   
   }
+  
   .btn_nav:hover{
     color: #CC2936;
     border: 2px solid #CC2936;
@@ -186,9 +193,23 @@ body{
     color: black;
     letter-spacing: 3px;
   }
-  
-  .dropdown-toggle:after {
-    content: none
+  .myDropMenu{
+    width: 195px;
+    height: 210px;
+    margin: 0px;
+    border: 1px solid #CC2936;
+    
+  }
+
+  .myDropMen::after{
+
+    background: ;
+
+  }
+  .dropdown-toggle::after {
+    /* content: none; */
+    color: #CC2936;
+   
   }
   
   .linkmtb{
@@ -287,6 +308,11 @@ body{
     height: 150px;
     border-radius: 20px;
     border: 1px solid #CC2936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
    
     
   }
@@ -297,18 +323,4 @@ body{
     background: #FAFAFA;
   }
   
-  /* Hover Effects on Card */
-  
-  @media (min-width: 992px) {
-    .pricing .card:hover {
-      margin-top: -.25rem;
-      margin-bottom: .25rem;
-      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-    }
-  
-    .pricing .card:hover .btn {
-      opacity: 1;
-    }
-  }
 
- 

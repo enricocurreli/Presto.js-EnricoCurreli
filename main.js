@@ -65,18 +65,23 @@ function createInterval(elementId, finalNumber, frequency){
 // createInterval(numFam, 50, 105)
 // createInterval(numCouple, 30, 180)
 
+let check = false;
 
-// let cntNum = document.querySelector("#cntNum")
+let cntNum = document.querySelector("#cntNum")
 
-// window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     
-//     if(window.scrollY > 150){
+    if(window.scrollY > 800 && check == false){
         
-       
+        check = true
+        createInterval(numBook, 80, 60)
+        createInterval(numFam, 50, 105)
+        createInterval(numCouple, 30, 180)
         
         
-//     } else {
+    } else {
         
-//     }
+    }
     
-// })
+})
+

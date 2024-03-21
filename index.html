@@ -1,662 +1,692 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Presto Js</title>
-    
-    <!--CDN AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--CDN BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Ephesis&display=swap" rel="stylesheet">
-    <!--ICON-->
-    <script src="https://kit.fontawesome.com/75eaebdc32.js" crossorigin="anonymous"></script>
-    <!--BOOTSTRAP ICON-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--MY CSS-->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presto Js</title>
+  
+  <!--CDN AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--CDN BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Ephesis&display=swap" rel="stylesheet">
+  <!--ICON-->
+  <script src="https://kit.fontawesome.com/75eaebdc32.js" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP ICON-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--MY CSS-->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
-    
-    
-    <nav class="navbar fixed-top navbar-expand-lg transition mx-0 d-flex justify-content-center">
-        <div class="container nav-cont d-flex justify-content-center">
-          <a class="navbar-brand" href="#" id="navbarBrand">
-            <!-- <img src="" id="logoNav" class="ps-3 transition mt-0 pt-0" alt=""> -->
-            <h3 class="resort-text display-3" id="capNav"> I Corsari - Resort</h3>
-          </a>
-          <div class="container">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <button class="navbar-toggler p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa-solid fa-angle-down display-5 text-black fs-1"></i>
-                  <!-- <img src="media/icons8-menu-50.png" class="w-75" alt=""> -->
-                </button>
-              </div>
-            </div>
+  
+  
+  <!--NAV-->
+  
+  <nav class="navbar fixed-top navbar-expand-lg transition mx-0 d-flex justify-content-center">
+    <div class="container nav-cont d-flex justify-content-center">
+      <a class="navbar-brand" href="#" id="navbarBrand">
+        <!-- <img src="" id="logoNav" class="ps-3 transition mt-0 pt-0" alt=""> -->
+        <h3 class="resort-text display-3" id="capNav"> I Corsari - Resort</h3>
+      </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button class="navbar-toggler p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-angle-down display-5 text-black fs-1"></i>
+              <!-- <img src="media/icons8-menu-50.png" class="w-75" alt=""> -->
+            </button>
           </div>
-          <div class="collapse navbar-collapse d-lg-flex justify-content-center  " id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="fs-4 nav-link active btn font-bitter" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="btn font-bitter dropdown-toggle nav-link active fs-4" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Attività
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#Pacchetti">Pacchetti Benessere</a></li>
-                  <li><a class="dropdown-item" href="#SPA">SPA</a></li>
-                  <li><a class="dropdown-item" href="#Tr_Benessere">Trattamenti Benessere</a></li>
-                  <li><a class="dropdown-item" href="#YOGA">Yoga</a></li>
-                  <li><a class="dropdown-item" href="#Piscina">Piscina</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="btn font-bitter nav-link active fs-4" href="#Escursioni">Escursioni</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn font-bitter nav-link active fs-4" href="#Offerte">Offerte</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn font-bitter nav-link active fs-4" href="#Contatti">Contatti</a>
-              </li>
-              <a class="btn btn_nav font-bitter py-2 " href="#" role="button">
-                <button class="btn btn_nav font-bitter m-0 p-0 ">Prenota</button>
-              </a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-center  " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="fs-4 nav-link active btn font-bitter" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="btn dropdown-toggle nav-link active fs-4" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Attività
+            </a>
+            <ul class="dropdown-menu myDropMenu">
+              <li><a class="dropdown-item" href="#Pacchetti">Pacchetti Benessere</a></li>
+              <li><a class="dropdown-item" href="#SPA">SPA</a></li>
+              <li><a class="dropdown-item" href="#Tr_Benessere">Trattamenti Benessere</a></li>
+              <li><a class="dropdown-item" href="#YOGA">Yoga</a></li>
+              <li><a class="dropdown-item" href="#Piscina">Piscina</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-      
-      
-      
-      <header class="position-relative"> 
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          </li>
           
-          <div class="carousel-inner">
-            <div class="carousel-item active slide1">
-              <div class="carousel-caption">
-                <h1 class="pb-0 mb-0">Il tuo soggiorno nel cuore del Sud Sardegna</h1>
-                
-                
-              </div>
-            </div>
-            <div class="carousel-item slide2">
-              <div class="carousel-caption">
-                <h1 class="display-2 fw-bolder">Scopri pacchetti esclusivi</h1>
-              </div>
-            </div>
-            <div class="carousel-item slide3">
-              <div class="carousel-caption">
-                <h1 class="display-2 fw-bolder">Lasciati stupire</h1>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+          
+          <li class="nav-item">
+            <a class="btn font-bitter nav-link active fs-4" href="#Escursioni">Escursioni</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn font-bitter nav-link active fs-4" href="#Offerte">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn font-bitter nav-link active fs-4" href="#Contatti">Contatti</a>
+          </li>
+          <a class="btn btn_nav font-bitter py-2 ms-2" href="#" role="button">
+            <button class="btn btn_nav font-bitter m-0 p-0 ">Prenota</button>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--FINE NAV-->
+  
+  <!--CAROUSEL-->
+  
+  <header class="position-relative"> 
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       
-      <section>
-        <div class="container my_ctn1 pt-5">
-          <div class="row justify-content-center py-5 m-0">
-            <div class="col-12 col-md-9  d-flex justify-content-center">
-              
-              <h2 class="h2_sect1">Vivi l’autentica ospitalità in stile sardo</h2>
-              
-            </div>
-          </div>
-        </div>  
-        <div class="container my_ctn1 pb-5">  
-          <div class="row justify-content-center m-0">
-            <div class="col-12 col-md-10 d-flex justify-content-center">
-              <p class="p_sect1 text-secondary">Ogni soggiorno ti concederà di vivere al meglio la tua vacanza, alla scoperta della nostra terra e tutte le sue meraviglie</p>
-            </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active slide1">
+          <div class="carousel-caption">
+            <h1 class="pb-0 mb-0">Il tuo soggiorno nel cuore del Sud Sardegna</h1>
+            
+            
           </div>
         </div>
+        <div class="carousel-item slide2">
+          <div class="carousel-caption">
+            <h1 class="display-2 fw-bolder">Scopri pacchetti esclusivi</h1>
+          </div>
+        </div>
+        <div class="carousel-item slide3">
+          <div class="carousel-caption">
+            <h1 class="display-2 fw-bolder">Lasciati stupire</h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section>
+    <div class="container my_ctn1 pt-5">
+      <div class="row justify-content-center py-5 m-0">
+        <div class="col-12 col-md-9  d-flex justify-content-center">
+          
+          <h2 class="h2_sect1">Vivi l’autentica ospitalità in stile sardo</h2>
+          
+        </div>
+      </div>
+    </div>  
+    <div class="container my_ctn1 pb-5">  
+      <div class="row justify-content-center m-0">
+        <div class="col-12 col-md-10 d-flex justify-content-center">
+          <p class="p_sect1 text-secondary">Ogni soggiorno ti concederà di vivere al meglio la tua vacanza, alla scoperta della nostra terra e tutte le sue meraviglie</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FINE CAROUSEL-->
+    
+    <!--Pacchetti-->
+  </section>
+  
+  <section>
+    <div class="container p-5" id="Pacchetti">
+      <div class="row justify-content-between pt-5">
         
-        <!--Pacchetti-->
-      </section>
-      
-      <section>
-        <div class="container p-5" id="Pacchetti">
-          <div class="row justify-content-between pt-5">
-            
-            <div data-aos="fade-up" data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-6 d-flex justify-content-center">
-            
-              <img src="media/benessere1.jpeg" class="img_benessere2 shadow" alt="">
-            </div>
-            
-            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              
-              <h2 class="h2benessere mt-3">Pacchetti benessere</h2>
-              
-              <div class="row justify-content-end">
-                
-                <div class="col-10 col-md-10 d-flex justify-content-end align-items-end" data-aos="fade-up" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                  
-                  <p class="mt-3 text-secondary mt-5">Un’ atmosfera di benessere unica!
-                    Uno spazio nuovo, di silenzio e pace in cui il tempo fluisce lentamente per regalarti equilibrio, armonia e nuove consapevolezze. </p>
-                    
-                  </div> 
-                </div> 
-                
-              </div>
-            </div> 
-          </div> 
-          
-          <div class="container p-5" id="SPA">
-            <div class="row mt-5">
-              <div class="col-12 d-flex ">
-                <h2 class="h2benessere2 mt-5">SPA</h2>
-              </div>
-            </div>
-            <div class="row">
-              
-              <div class="col-12 col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-down" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
-                
-                <p class="mt-2 text-secondary">Il percorso SPA vi farà riscoprire la natura della bellezza attraverso una combinazione perfetta di luci, suoni, profumi e vapori che liberano energie profonde e risvegliano i sensi.L’avvolgente nebbia del bagno turco, la doccia emozionale a getti e nebulizzazioni calde e fredde, l'accogliente sauna finlandese, che raggiunge i 90°, sono gli ingredienti preziosi per una completa rigenerazione</p>
-              </div>
-              
-              <div  data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="1000" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
-                
-                <img src="media/fotosauna.jpeg" class="img_benessere1 shadow mt-5" alt="">
-                
-              </div> 
-              <div  data-aos="fade-down" data-aos-easing="linear"
-              data-aos-duration="1000" class="col-12 col-md-3 d-flex justify-content-between align-items-center">
-                
-                <img src="media/fotodoccia.jpeg" class="img_benessere1 shadow mt-5" alt="">
-                
-              </div> 
-            </div>
-          </div> 
-          
-          <div class="container p-5" id="Tr_Benessere">
-            <div class="row mt-5">
-              <div class="col-12 col-md-6 d-flex justify-content-center">
-                <h2 class="h2benessere2 mt-5" >Trattamenti Benessere</h2>
-              </div>
-            </div>
-            <div class="row mt-5 align-items-center justify-content-center">
-              <div data-aos="fade-down" data-aos-easing="linear"
-              data-aos-duration="1000" class="col-12 col-md-4 d-flex align-items-center">
-                <img src="media/fotomassaggio1.jpeg" class="img_benessere1 shadow" alt="">
-              </div>
-              <div data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="1000" class="col-12 col-md-3 d-flex align-items-center justify-content-between">
-                <img src="media/fotomassaggio2.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              </div>
-              
-              <div class="col-12 col-md-3 d-flex align-items-center justify-content-start">
-                <p class="mt-5 text-secondary" data-aos="fade-up" data-aos-offset="300"
-            data-aos-easing="ease-in-sine">Oltre ad una vasta proposta personalizzata di Trattamenti di estetica avanzata viso e corpo, abbiamo arricchito la nostra Carta dei servizi con Massaggi e Rituali di bellezza che attingono ai profumi e alle tradizioni del nostro territorio. Affidatevi alle manualità sapienti delle nostre SPA Therapist e concedetevi una pausa di benessere e relax.</p>
-              </div>
-              
-              
-              
-            </div>
-          </div>
-        </div>
+        <div data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="col-12 col-md-6 d-flex justify-content-center">
         
-        <div class="container p-5" id="YOGA">
-          <div class="row mt-5">
-            <div class="col-12 d-flex ">
-              <h2 class="h2benessere2 mt-5">YOGA</h2>
-            </div>
-          </div>
-          <div class="row mt-5 overflow-hidden">
-            
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-              
-              <p class="mt-2 text-secondary" data-aos="fade-up" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Distenditi, respira e saluta il nuovo giorno.Lo yoga ti aiuterà ad aprire il cuore, sciogliere i muscoli e calmare la mente con la pratica. In sessioni di gruppo o private, è possibile raggiungere forza, flessibilità e nuovi livelli di rilassamento e consapevolezza.Sarà possibile praticare diversi stili di yoga, dai più rilassanti come l’Hatha Yoga ai più dinamici come il Vinyasa. Ogni livello è assolutamente il benvenuto.
-                
-              </p>
-            </div>
-            
-            <div data-aos="fade-down"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
-              
-              <img src="media/fotoyoga1.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              
-            </div> 
-            <div data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
-              
-              <img src="media/fotoyoga2.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              
-            </div> 
-          </div>
+        <img src="media/benessere1.jpeg" class="img_benessere2 shadow" alt="">
+      </div>
+      
+      <div class="col-12 col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+      
+      <h2 class="h2benessere mt-3">Pacchetti benessere</h2>
+      
+      <div class="row justify-content-end">
+        
+        <div class="col-10 col-md-10 d-flex justify-content-end align-items-end" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        
+        <p class="mt-3 text-secondary mt-5">Un’ atmosfera di benessere unica!
+          Uno spazio nuovo, di silenzio e pace in cui il tempo fluisce lentamente per regalarti equilibrio, armonia e nuove consapevolezze. </p>
+          
         </div> 
+      </div> 
+      
+    </div>
+  </div> 
+</div> 
+
+<div class="container p-5" id="SPA">
+  <div class="row mt-5">
+    <div class="col-12 d-flex ">
+      <h2 class="h2benessere2 mt-5">SPA</h2>
+    </div>
+  </div>
+  <div class="row">
+    
+    <div class="col-12 col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-down" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+    
+    <p class="mt-2 text-secondary">Il percorso SPA vi farà riscoprire la natura della bellezza attraverso una combinazione perfetta di luci, suoni, profumi e vapori che liberano energie profonde e risvegliano i sensi.L’avvolgente nebbia del bagno turco, la doccia emozionale a getti e nebulizzazioni calde e fredde, l'accogliente sauna finlandese, che raggiunge i 90°, sono gli ingredienti preziosi per una completa rigenerazione</p>
+  </div>
+  
+  <div  data-aos="fade-up" data-aos-easing="linear"
+  data-aos-duration="1000" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
+  
+  <img src="media/fotosauna.jpeg" class="img_benessere1 shadow mt-5" alt="">
+  
+</div> 
+<div  data-aos="fade-down" data-aos-easing="linear"
+data-aos-duration="1000" class="col-12 col-md-3 d-flex justify-content-between align-items-center">
+
+<img src="media/fotodoccia.jpeg" class="img_benessere1 shadow mt-5" alt="">
+
+</div> 
+</div>
+</div> 
+
+<div class="container p-5" id="Tr_Benessere">
+  <div class="row mt-5">
+    <div class="col-12 col-md-6 d-flex">
+      <h2 class="h2benessere2 mt-5" >Trattamenti Benessere</h2>
+    </div>
+  </div>
+  <div class="row mt-5 align-items-center justify-content-center">
+    <div data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="1000" class="col-12 col-md-4 d-flex align-items-center">
+    <img src="media/fotomassaggio1.jpeg" class="img_benessere1 shadow" alt="">
+  </div>
+  <div data-aos="fade-up" data-aos-easing="linear"
+  data-aos-duration="1000" class="col-12 col-md-3 d-flex align-items-center justify-content-between">
+  <img src="media/fotomassaggio2.jpeg" class="img_benessere1 shadow mt-5" alt="">
+</div>
+
+<div class="col-12 col-md-3 d-flex align-items-center justify-content-start">
+  <p class="mt-5 text-secondary" data-aos="fade-up" data-aos-offset="300"
+  data-aos-easing="ease-in-sine">Oltre ad una vasta proposta personalizzata di Trattamenti di estetica avanzata viso e corpo, abbiamo arricchito la nostra Carta dei servizi con Massaggi e Rituali di bellezza che attingono ai profumi e alle tradizioni del nostro territorio. Affidatevi alle manualità sapienti delle nostre SPA Therapist e concedetevi una pausa di benessere e relax.</p>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="container p-5" id="YOGA">
+  <div class="row mt-5">
+    <div class="col-12 d-flex ">
+      <h2 class="h2benessere2 mt-5">YOGA</h2>
+    </div>
+  </div>
+  <div class="row mt-5 overflow-hidden">
+    
+    <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+      
+      <p class="mt-2 text-secondary" data-aos="fade-up" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">Distenditi, respira e saluta il nuovo giorno.Lo yoga ti aiuterà ad aprire il cuore, sciogliere i muscoli e calmare la mente con la pratica. In sessioni di gruppo o private, è possibile raggiungere forza, flessibilità e nuovi livelli di rilassamento e consapevolezza.Sarà possibile praticare diversi stili di yoga, dai più rilassanti come l’Hatha Yoga ai più dinamici come il Vinyasa. Ogni livello è assolutamente il benvenuto.
+      
+    </p>
+  </div>
+  
+  <div data-aos="fade-down"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
+  
+  <img src="media/fotoyoga1.jpeg" class="img_benessere1 shadow mt-5" alt="">
+  
+</div> 
+<div data-aos="fade-up"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex justify-content-between align-items-center">
+
+<img src="media/fotoyoga2.jpeg" class="img_benessere1 shadow mt-5" alt="">
+
+</div> 
+</div>
+</div> 
+
+<div class="container p-5" id="Piscina">
+  <div class="row mt-5 overflow-hidden">
+    <div class="col-12 d-flex">
+      <h2 class="h2benessere2 mt-5">Piscina</h2>
+    </div>
+  </div>
+  <div class="row mt-5 align-items-center justify-content-center">
+    <div data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex align-items-center">
+    <img src="media/fotopiscina2.jpeg" class="img_benessere1 shadow" alt="foto Piscina">
+  </div>
+  <div data-aos="fade-up"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex align-items-center justify-content-between">
+  <img src="media/fotopiscina1.jpeg" class="img_benessere1 shadow mt-5" alt="foto piscina">
+</div>
+
+<div class="col-12 col-md-4 d-flex align-items-center justify-content-start">
+  <p class="mt-5 text-secondary ms-2" data-aos="fade-up" data-aos-offset="300"
+  data-aos-easing="ease-in-sine">Benvenuti nella nostra splendida piscina all'aperto, un'oasi di relax e raffinatezza. Immersa nel giardino, la nostra piscina incanta con le sue acque cristalline che invitano a un rinfrescante tuffo. Circondata da comode sdraio e eleganti gazebo, offre il perfetto scenario per trascorrere giornate di puro relax sotto il sole dorato. Il nostro attento staff è sempre a vostra disposizione per soddisfare ogni vostro desiderio, offrendo un servizio impeccabile e discreto. Con cocktail artigianali preparati al momento e deliziosi snack gourmet. E quando il sole tramonta all'orizzonte, la nostra piscina si trasforma in un incantevole scenario romantico, illuminato da luci soffuse che creano un'atmosfera magica e suggestiva, perfetta per una serata indimenticabile.</p>
+</div>
+</div>
+</div>
+</div>
+
+</section> 
+
+<!--FINE PACCHETTI-->
+
+<!--ESCURSIONI-->
+
+<section>
+  <div class="container p-5" id="Escursioni">
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="h2benessere2 mt-5">Escursioni</h2>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h5 class="h2benessere2 mt-3">Per i nostri ospiti proponiamo due tipi di escursioni, via mare e via terra:</h5>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <h5 class="h2benessere2 mt-5">Via terra:</h5>
+      </div>
+    </div>
+    <div class="row">
+      
+      <div class="col-12 col-md-4">
         
-        <div class="container p-5" id="Piscina">
-          <div class="row mt-5 overflow-hidden">
-            <div class="col-12 d-flex">
-              <h2 class="h2benessere2 mt-5">Piscina</h2>
+        <ul class="mt-5 text-secondary">
+          
+          <li><strong class="text-black">Trekking:</strong> Il Sud Sardegna offre una miriade di sentieri escursionistici che attraversano foreste, montagne e pianure costiere. La parola chiave è “wow”. E’ questa la parola che dirai quando affacciandoti  dall’alta falesia di Masua vedrai affiorare dal profondo blu del mare il faraglione più alto d’Europa, il Pan di Zucchero, o ancora quando arrivato a Cala Domestica potrai ammirare le sfumature del mare che vanno dal turchese, all’azzurro. Ammira alcune delle dune più alte d'Europa a Piscinas, addentrati nel territorio di Arbus e Guspini, ricco di storia mineraria.</li>
+        </ul>
+        
+      </div>
+      
+      <div class="col-12 col-md-4">
+        
+        <ul class="mt-5 text-secondary">
+          <li class="mt-5"><strong class="text-black">Visite culturali:</strong> Esplora antichi siti archeologici, villaggi tradizionali e città storiche che punteggiano il paesaggio della Sardegna. Dai un'occhiata alle rovine nuragiche, come il complesso di Su Nuraxi a Barumini, dichiarato Patrimonio dell'Umanità UNESCO ed è uno dei più importanti e ben conservati esempi di architettura nuragica in Sardegna. Visita l' affascinante città costiera di Cagliari, ricca di storia e cultura, chiese e santuari di stile romanico sparse per tutto il territorio.</li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="col-12 col-md-4">
+        
+        <ul class="mt-5 text-secondary">
+          <li class="mt-5"><strong class="text-black">Escursioni in mountain bike:</strong> Se sei un appassionato di mountain bike, la Sardegna offre una serie di percorsi avvincenti che attraversano paesaggi spettacolari. Pedala lungo sentieri sterrati, single track e strade di campagna per scoprire angoli nascosti dell'isola e goderti un'avventura all'aria aperta indimenticabile.
+            Per scoprire i percorsi <a class="linkmtb" href="https://www.komoot.com/it-it/guide/62408/fantastici-percorsi-e-itinerari-mtb-nella-sardegna-del-sud" target="_blank"> clicca qui.</a></li>
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+      <div class="row mt-5 ms-3">
+        
+        <div data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+        
+        <img src="media/montagna2.jpeg" class="img_benessere1 shadow mt-5" alt="">
+      </div>
+      
+      <div data-aos="fade-down"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+      
+      <img src="media/fotocagliari.jpeg" class="img_benessere1 shadow mt-5" alt="">
+    </div>
+    
+    <div data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+    
+    <img src="media/fotobici.jpeg" class="img_benessere1 shadow mt-5" alt="">
+  </div>
+  
+</div>
+
+<div class="row mt-5">
+  <div class="col-12">
+    <h5 class="h2benessere2 my-5">Via mare:</h5>
+  </div>
+</div>
+<div class="row">
+  
+  <div class="col-12 col-md-4">
+    
+    <ul class="mt-5 text-secondary">
+      
+      <li><strong class="text-black">Spiagge:</strong> La costa del Sud-Ovest della Sardegna è punteggiata da calette remote, spiagge incontaminate e promontori rocciosi. Escursioni in barca lungo questa costa offrono l'opportunità di scoprire paesaggi mozzafiato e fare snorkeling nelle acque cristalline.
+        Scopri il deserto di sabbia di Piscinas, la selvaggia spiaggia di Scivu e le sue rocce rosse che l'avvolgono, le scogliere di Capo Pecora e la spiaggia di Cala Domestica, sono solo alcune delle bellissime spiagge della nostra zona</li>
+      </ul>
+      
+    </div>
+    
+    <div class="col-12 col-md-4">
+      
+      <ul class="mt-5 text-secondary">
+        <li class="mt-5"><strong class="text-black">Escursioni e pesca:</strong> Se sei avventuroso, potresti considerare un'escursione alla guida di un kayak o SUP, lungo la costa. Ciò ti permetterà di esplorare insenature nascoste, grotte marine e rifugi naturali, godendo di una prospettiva unica sull'ambiente marino.
+          Inoltre, la Sardegna è rinomata per la pesca sportiva. Aziende partner offrono escursioni di pesca in mare aperto dove puoi provare a catturare una varietà di pesci, inclusi tonni, spigole, e dentici.
+        </li>
+        
+      </ul>
+      
+    </div>
+    
+    <div class="col-12 col-md-4">
+      
+      <ul class="mt-5 text-secondary">
+        <li class="mt-5"><strong class="text-black"> Arcipelago del Sulcis:</strong>Composto dalle isole di Sant'Antioco e San Pietro, offre la possibilità di escursioni in barca tra paesaggi suggestivi, grotte marine e spiagge appartate. Puoi visitare il paese di Carloforte sull'isola di San Pietro, i paesi di Sant'Antioco e Calasetta nell'isola di Sant'Antioco, in assaporare la cucina locale e l'atmosfera unica.</li>
+      </ul>
+      
+    </div>
+    
+  </div> 
+  
+  <div class="row my-5 py-5 ms-3">
+    
+    <div data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+    
+    <img src="media/fotoscivu.jpeg" class="img_benessere1 shadow mt-5" alt="">
+  </div>
+  
+  <div data-aos="fade-up"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+  
+  <img src="media/fotosup.jpeg" class="img_benessere1 shadow mt-5" alt="">
+</div>
+
+<div data-aos="fade-down"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine" class="col-12 col-md-4">
+
+<img src="media/fotocarloforte.jpeg" class="img_benessere1 shadow mt-5" alt="">
+</div>
+
+</div>
+
+<!--FINE ESCURSIONI-->
+
+</section>
+<!-- OFFERTE -->
+<section class="pricing mb-5 pt-5" id="Offerte">
+  
+  <div class="container-fluid" >
+    
+    <div class="row mt-5 p-0 m-0">
+      <div class="col-12  my-5 d-flex justify-content-center">
+        <h2 class="h2benessere2 mt-5">Offerte della settimana</h2>
+      </div>
+    </div>
+    
+    
+    <div class="row justify-content-center overflow-hidden">
+      
+      <div class="col-12 col-md-5 mt-5 mb-4 d-flex justify-content-center">
+        <div class="card w-75" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <div class="card-body">
+          <img src="media/foto1offerte.jpeg" class="img_benessere1 shadow mt-5" alt="">
+          <h5 class="h2benessere2 mt-3">Omaggio
+            per bambini e ragazzi</h5>
+            
+            <hr>
+            <ul class="fa-ul text-secondary">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Periodo limitato
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Bambini e ragazzi fino a 17 anni</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenotazione esclusivamente dal nostro sito</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenota - 1 mar 2024 - 31 mar 2024</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Soggiorna - 1 mar 2024 - 19 dic 2024</li>
+                
+              </ul>
+              <div class="d-grid py-4">
+                <a href="#" class="btn btn_nav text-uppercase">Scopri</a>
+              </div>
             </div>
           </div>
-          <div class="row mt-5 align-items-center justify-content-center">
-            <div data-aos="fade-down"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex align-items-center">
-              <img src="media/fotopiscina2.jpeg" class="img_benessere1 shadow" alt="foto Piscina">
-            </div>
-            <div data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4 d-flex align-items-center justify-content-between">
-              <img src="media/fotopiscina1.jpeg" class="img_benessere1 shadow mt-5" alt="foto piscina">
-            </div>
+        </div>
+        
+        <div class="col-12 col-md-5 mt-5 mb-4 d-flex justify-content-center">
+          <div class="card w-75 d-flex justify-content-center" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <div class="card-body">
+            <img src="media/fotopasqua.jpeg" class="img_benessere1 shadow mt-5" alt="">
+            <h5 class="h2benessere2 mt-3 mb-4 ms">Pasqua e Pasquetta</h5>
             
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-start">
-              <p class="mt-5 text-secondary ms-2" data-aos="fade-up" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Benvenuti nella nostra splendida piscina all'aperto, un'oasi di relax e raffinatezza. Immersa nel giardino, la nostra piscina incanta con le sue acque cristalline che invitano a un rinfrescante tuffo. Circondata da comode sdraio e eleganti gazebo, offre il perfetto scenario per trascorrere giornate di puro relax sotto il sole dorato. Il nostro attento staff è sempre a vostra disposizione per soddisfare ogni vostro desiderio, offrendo un servizio impeccabile e discreto. Con cocktail artigianali preparati al momento e deliziosi snack gourmet. E quando il sole tramonta all'orizzonte, la nostra piscina si trasforma in un incantevole scenario romantico, illuminato da luci soffuse che creano un'atmosfera magica e suggestiva, perfetta per una serata indimenticabile.</p>
+            <hr>
+            <ul class="fa-ul text-secondary">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Pacchetto All Inclusive
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Bambini da 0 a 8 anni non pagano</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Pensione completa</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenota - 1 mar 2024 - 28 mar 2024</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Soggiorna - 28 mar 2024 - 2 apr 2024</li>
+                
+              </ul>
+              
+              <div class="d-grid py-4">
+                <a href="#" class="btn btn_nav text-uppercase">Scopri</a>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- FINE OFFERTE -->
+  
+  <!-- NUMERI -->
+  
+  <div class="container container-fluid my-5" id="cntNum">
+    
+    <div class="row justify-content-evenly">
       
-    </section> 
-
-    <!--ESCURSIONI-->
-
-    <section>
-      <div class="container p-5" id="Escursioni">
-        <div class="row mt-5">
-          <div class="col-12">
-            <h2 class="h2benessere2 mt-5">Escursioni</h2>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12">
-            <h5 class="h2benessere2 mt-3">Per i nostri ospiti proponiamo due tipi di escursioni, via mare e via terra:</h5>
-          </div>
-        </div>
-        <div class="row my-5">
-          <div class="col-12">
-            <h5 class="h2benessere2 mt-5">Via terra:</h5>
-          </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-12 col-md-4">
-            
-            <ul class="mt-5 text-secondary">
-              
-              <li><strong class="text-black">Trekking:</strong> Il Sud Sardegna offre una miriade di sentieri escursionistici che attraversano foreste, montagne e pianure costiere. La parola chiave è “wow”. E’ questa la parola che dirai quando affacciandoti  dall’alta falesia di Masua vedrai affiorare dal profondo blu del mare il faraglione più alto d’Europa, il Pan di Zucchero, o ancora quando arrivato a Cala Domestica potrai ammirare le sfumature del mare che vanno dal turchese, all’azzurro. Ammira alcune delle dune più alte d'Europa a Piscinas, addentrati nel territorio di Arbus e Guspini, ricco di storia mineraria.</li>
-            </ul>
-            
-          </div>
-          
-          <div class="col-12 col-md-4">
-            
-            <ul class="mt-5 text-secondary">
-              <li class="mt-5"><strong class="text-black">Visite culturali:</strong> Esplora antichi siti archeologici, villaggi tradizionali e città storiche che punteggiano il paesaggio della Sardegna. Dai un'occhiata alle rovine nuragiche, come il complesso di Su Nuraxi a Barumini, dichiarato Patrimonio dell'Umanità UNESCO ed è uno dei più importanti e ben conservati esempi di architettura nuragica in Sardegna. Visita l' affascinante città costiera di Cagliari, ricca di storia e cultura, chiese e santuari di stile romanico sparse per tutto il territorio.</li>
-              
-            </ul>
-            
-          </div>
-          
-          <div class="col-12 col-md-4">
-            
-            <ul class="mt-5 text-secondary">
-              <li class="mt-5"><strong class="text-black">Escursioni in mountain bike:</strong> Se sei un appassionato di mountain bike, la Sardegna offre una serie di percorsi avvincenti che attraversano paesaggi spettacolari. Pedala lungo sentieri sterrati, single track e strade di campagna per scoprire angoli nascosti dell'isola e goderti un'avventura all'aria aperta indimenticabile.
-                Per scoprire i percorsi <a class="linkmtb" href="https://www.komoot.com/it-it/guide/62408/fantastici-percorsi-e-itinerari-mtb-nella-sardegna-del-sud" target="_blank"> clicca qui.</a></li>
-              </ul>
-              
-            </div>
-            
-          </div>
-          
-          <div class="row mt-5 ms-3">
-            
-            <div data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-              
-              <img src="media/montagna2.jpeg" class="img_benessere1 shadow mt-5" alt="">
-            </div>
-            
-            <div data-aos="fade-down"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-              
-              <img src="media/fotocagliari.jpeg" class="img_benessere1 shadow mt-5" alt="">
-            </div>
-            
-            <div data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-              
-              <img src="media/fotobici.jpeg" class="img_benessere1 shadow mt-5" alt="">
-            </div>
-            
-          </div>
-          
-          <div class="row mt-5">
-            <div class="col-12">
-              <h5 class="h2benessere2 my-5">Via mare:</h5>
-            </div>
-          </div>
-          <div class="row">
-            
-            <div class="col-12 col-md-4">
-              
-              <ul class="mt-5 text-secondary">
-                
-                <li><strong class="text-black">Spiagge:</strong> La costa del Sud-Ovest della Sardegna è punteggiata da calette remote, spiagge incontaminate e promontori rocciosi. Escursioni in barca lungo questa costa offrono l'opportunità di scoprire paesaggi mozzafiato e fare snorkeling nelle acque cristalline.
-                  Scopri il deserto di sabbia di Piscinas, la selvaggia spiaggia di Scivu e le sue rocce rosse che l'avvolgono, le scogliere di Capo Pecora e la spiaggia di Cala Domestica, sono solo alcune delle bellissime spiagge della nostra zona</li>
-                </ul>
-                
-              </div>
-              
-              <div class="col-12 col-md-4">
-                
-                <ul class="mt-5 text-secondary">
-                  <li class="mt-5"><strong class="text-black">Escursioni e pesca:</strong> Se sei avventuroso, potresti considerare un'escursione alla guida di un kayak o SUP, lungo la costa. Ciò ti permetterà di esplorare insenature nascoste, grotte marine e rifugi naturali, godendo di una prospettiva unica sull'ambiente marino.
-                    Inoltre, la Sardegna è rinomata per la pesca sportiva. Aziende partner offrono escursioni di pesca in mare aperto dove puoi provare a catturare una varietà di pesci, inclusi tonni, spigole, e dentici.
-                  </li>
+      <div class="col-12 my-5">
+        <h2 class="h2benessere2 fs-1 mt-5 text-center border-bottom">NELLE ULTIME 24H</h2>
+      </div>
+      <div class="col-11 col-md-3 boxNumeri shadow mb-4">
+        <h6 class="fs-5">PRENOTAZIONI:</h6>
+        <p class="fs-2" id="numBook">0</p>
+      </div>
+      <div class="col-11 col-md-3 boxNumeri shadow mb-4">
+        <h6 class="fs-5">FAMIGLIE:</h6>
+        <p  class="fs-2" id="numFam">0</p>
+      </div>
+      <div class="col-11 col-md-3 boxNumeri shadow">
+        <h6 class="fs-5">COPPIE:</h6>
+        <p class="fs-2"id="numCouple">0</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FINE NUMERI -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- FORM -->
+  
+  <section class="contatti" id="Contatti">
+    
+    <div class="container-fluid p-5 my-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+            <div class="card-body1 p-0">
+              <div class="row g-0">
+                <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                <div class="col-sm-6 p-4">
+                  <div class="text-center">
+                    <div>
+                      <h3 class="h2benessere2 mt-3">Contattaci</h3>
+                      <p class="mt-3 text-secondary mt-5">Ti risponderemo nel più breve tempo possibile</p>
+                    </div>
+                  </div>  
                   
-                </ul>
-                
-              </div>
-              
-              <div class="col-12 col-md-4">
-                
-                <ul class="mt-5 text-secondary">
-                  <li class="mt-5"><strong class="text-black"> Arcipelago del Sulcis:</strong>Composto dalle isole di Sant'Antioco e San Pietro, offre la possibilità di escursioni in barca tra paesaggi suggestivi, grotte marine e spiagge appartate. Puoi visitare il paese di Carloforte sull'isola di San Pietro, i paesi di Sant'Antioco e Calasetta nell'isola di Sant'Antioco, in assaporare la cucina locale e l'atmosfera unica.</li>
-                </ul>
-                
-              </div>
-              
-            </div> 
-            
-            <div class="row my-5 py-5 ms-3">
-              
-              <div data-aos="fade-down"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-                
-                <img src="media/fotoscivu.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              </div>
-              
-              <div data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-                
-                <img src="media/fotosup.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              </div>
-              
-              <div data-aos="fade-down"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine" class="col-12 col-md-4">
-                
-                <img src="media/fotocarloforte.jpeg" class="img_benessere1 shadow mt-5" alt="">
-              </div>
-              
-            </div>
-
-            <!--FINE ESCURSIONI-->
-            
-    </section>
-          <!-- OFFERTE -->
-          <section class="pricing mb-5 pt-5" id="Offerte">
-    
-            <div class="container-fluid" >
-    
-              <div class="row mt-5 p-0 m-0">
-                <div class="col-12  my-5 d-flex justify-content-center">
-                  <h2 class="h2benessere2 mt-5">Offerte della settimana</h2>
-                </div>
-              </div>
-    
-    
-              <div class="row justify-content-center overflow-hidden">
-    
-                <div class="col-12 col-md-5 mt-5 d-flex justify-content-center">
-                  <div class="card w-75" data-aos="fade-left"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine">
-                    <div class="card-body">
-                      <img src="media/foto1offerte.jpeg" class="img_benessere1 shadow mt-5" alt="">
-                      <h5 class="h2benessere2 mt-3">Omaggio
-                      per bambini e ragazzi</h5>
+                  
+                  <form id="Contatti" data-sb-form-api-token="API_TOKEN">
                     
-                      <hr>
-                      <ul class="fa-ul text-secondary">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Periodo limitato
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Bambini e ragazzi fino a 17 anni</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenotazione esclusivamente dal nostro sito</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenota - 1 mar 2024 - 31 mar 2024</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Soggiorna - 1 mar 2024 - 19 dic 2024</li>
+                    <!-- Name Input -->
+                    <div class="form-floating mb-3">
+                      <input class="form-control" id="name" type="text" placeholder="Nome e Cognome" data-sb-validations="" />
+                      <label for="name">Nome e Cognome</label>
+                      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                    </div>
+                    
+                    <!-- Email Input -->
+                    <div class="form-floating mb-3">
+                      <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="" />
+                      <label for="emailAddress">Email</label>
+                      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                    </div>
+                    
+                    <!-- Message Input -->
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" id="message" type="text" placeholder="Scrivi qui le tue richieste" style="height: 10rem;" data-sb-validations=""></textarea>
+                      <label for="message">Scrivi qui le tue richieste</label>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    </div>
+                    
+                    <!-- Submit success message -->
+                    <div class="d-none" id="submitSuccessMessage">
+                      <div class="text-center mb-3">
+                        <div class="fw-bolder">Richiesta Inviata</div>
                         
-                      </ul>
-                      <div class="d-grid py-4">
-                        <a href="#" class="btn btn_nav text-uppercase">Scopri</a>
                       </div>
                     </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-5 mt-5 mb-4 d-flex justify-content-center">
-                  <div class="card w-75 d-flex justify-content-center" data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine">
-                    <div class="card-body">
-                      <img src="media/fotopasqua.jpeg" class="img_benessere1 shadow mt-5" alt="">
-                      <h5 class="h2benessere2 mt-3 mb-4 ms">Pasqua e Pasquetta</h5>
                     
-                      <hr>
-                      <ul class="fa-ul text-secondary">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Pacchetto All Inclusive
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Bambini da 0 a 8 anni non pagano</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Pensione completa</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Prenota - 1 mar 2024 - 28 mar 2024</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Soggiorna - 28 mar 2024 - 2 apr 2024</li>
-                        
-                      </ul>
-    
-                      <div class="d-grid py-4">
-                        <a href="#" class="btn btn_nav text-uppercase">Scopri</a>
-                      </div>
-    
+                    <!-- Submit error message -->
+                    <div class="d-none" id="submitErrorMessage">
+                      <div class="text-center text-danger mb-3">Error sending message!</div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- FINE OFFERTE -->
+                    
+                    <!--MODAL BUTTON-->
+                    <div class="d-grid">
+                      <button class="btn btn_nav btn_cont btn-lg" id="submitButton" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">INVIA</button>
+                    </div>
+                  </form>
+                  <!-- End of contact form -->
+                  
+                  <!--MODAL-->
+                  
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-0">
+                          
+                        </div>
+                        <div class="modal-body p-5">
+                         <h3>Grazie per averci contattato! Risponderemo appena possibile </h3>
+                        </div>
+                        <div class="modal-footer border-0">
 
-          <!-- NUMERI -->
-
-          <div class="container container-fluid my-5" id="cntNum">
-            <div class="row justify-content-evenly">
-                <div class="col-12 my-5">
-                    <h2 class="h2benessere2 fs-1 mt-5 text-center border-bottom">NELLE ULTIME 24H</h2>
-                </div>
-                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow mb-4 w-75">
-                    <h6 class="fs-5">PRENOTAZIONI:</h6>
-                    <p class="fs-2" id="numBook">0</p>
-                </div>
-                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow mb-4 w-75">
-                    <h6 class="fs-5">FAMIGLIE:</h6>
-                    <p  class="fs-2" id="numFam">0</p>
-                </div>
-                <div class="col-12  boxNumeri d-flex flex-column align-items-center justify-content-center shadow w-75">
-                    <h6 class="fs-5">COPPIE:</h6>
-                    <p class="fs-2"id="numCouple">0</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- FINE NUMERI -->
-
-
-
-
-
-
-
-
-
-          <!-- FORM -->
-          
-          <section class="contatti" id="Contatti">
-    
-            <div class="container-fluid p-5 my-5">
-              <div class="row justify-content-center">
-                <div class="col-xl-10">
-                  <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
-                    <div class="card-body1 p-0">
-                      <div class="row g-0">
-                        <div class="col-sm-6 d-none d-sm-block bg-image"></div>
-                        <div class="col-sm-6 p-4">
-                          <div class="text-center">
-                            <div>
-                              <h3 class="h2benessere2 mt-3">Contattaci</h3>
-                              <p class="mt-3 text-secondary mt-5">Ti risponderemo nel più breve tempo possibile</p>
-                            </div>
-                          </div>  
-            
-            
-                          <form id="Contatti" data-sb-form-api-token="API_TOKEN">
-            
-                            <!-- Name Input -->
-                            <div class="form-floating mb-3">
-                              <input class="form-control" id="name" type="text" placeholder="Nome e Cognome" data-sb-validations="required" />
-                              <label for="name">Nome e Cognome</label>
-                              <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                            </div>
-            
-                            <!-- Email Input -->
-                            <div class="form-floating mb-3">
-                              <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required,email" />
-                              <label for="emailAddress">Email</label>
-                              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                            </div>
-            
-                            <!-- Message Input -->
-                            <div class="form-floating mb-3">
-                              <textarea class="form-control" id="message" type="text" placeholder="Scrivi qui le tue richieste" style="height: 10rem;" data-sb-validations="required"></textarea>
-                              <label for="message">Scrivi qui le tue richieste</label>
-                              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                            </div>
-            
-                            <!-- Submit success message -->
-                            <div class="d-none" id="submitSuccessMessage">
-                              <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                
-                              </div>
-                            </div>
-            
-                            <!-- Submit error message -->
-                            <div class="d-none" id="submitErrorMessage">
-                              <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-            
-                            <!-- Submit button -->
-                            <div class="d-grid">
-                              <button class="btn btn_nav btn_cont btn-lg" id="submitButton" type="submit">INVIA</button>
-                            </div>
-                          </form>
-                          <!-- End of contact form -->
-            
+                          <button type="button" class="btn btn_nav" data-bs-dismiss="modal">Chiudi</button>
+                          
                         </div>
                       </div>
-            
                     </div>
                   </div>
+                  
                 </div>
               </div>
-            </div>
-            
-            <!-- CDN Link to SB Forms Scripts -->
-            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-          </section> 
-    
-     
-          <div class="container-fluid footer_d px-0">
-            
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border_footer m-0 p-0">
-              <div class="col-md-3 mb-3 order-last order-md-first ps-5">
-                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <h3 class="resort-text display-5 text-center "> I Corsari</h3>
-                <h3 class="resort-text display-5 text-center"> Resort</h3>
-                <h6 class="stelline text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h6>
-                <p class="text-body-secondary ms-2">Enrico Curreli © 2024 Company, Inc</p>
-              </div>
               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CDN Link to SB Forms Scripts -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </section> 
+  
+  
+  <div class="container-fluid footer_d px-0">
+    
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border_footer m-0 p-0">
+      <div class="col-md-3 mb-3 order-last order-md-first ps-5">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <h3 class="resort-text display-5 text-center "> I Corsari</h3>
+        <h3 class="resort-text display-5 text-center"> Resort</h3>
+        <h6 class="stelline text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h6>
+        <p class="text-body-secondary ms-2">Enrico Curreli © 2024 Company, Inc</p>
+      </div>
+      
+      
+      
+      <div class="col-md-3 mb-3">
         
-          
-              <div class="col-md-3 mb-3">
-                
-                <ul class="nav flex-column align-items-center text-center">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                  <li class="nav-item mb-2"><a href="#Attività" class="nav-link p-0 text-body-secondary">Attività</a></li>
-                  <li class="nav-item mb-2"><a href="#Escursioni" class="nav-link p-0 text-body-secondary">Escursioni</a></li>
-                  <li class="nav-item mb-2"><a href="#Offerte" class="nav-link p-0 text-body-secondary">Offerte</a></li>
-                  <li class="nav-item mb-2"><a href="#Contatti" class="nav-link p-0 text-body-secondary">Contatti</a></li>
-                </ul>
-              </div>
-          
-              <div class="col-md-3 mb-3">
-               
-                <ul class="nav flex-column text-center">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Copyright</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Use of Terms</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
-                </ul>
-              </div>
-          
-              <div class="col-md-3 mb-3">
-                
-                <ul class="nav ">
-                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
-                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
-                  <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
-                  <li class="nav-item mb-2 p-2">
-                    <p class="text-secondary"><i class="bi bi-telephone"></i> +39 123 456 7890 </p>
-                  </li>
-                  <li class="nav-item mb-2 p-2">
-                    <p class="text-secondary"><i class="bi bi-geo-alt"></i> Via del Mare - Loc. Costa Verde 09031 Arbus, SU - Italia</p>
-                  </li>
-                </ul>
-              </div>
-            </footer>
-          </div> 
-    
-    
-    
-    
-    
-    
-    <!--AOS CDN-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!--BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!--MY JS-->
-    <script src="main.js"></script>
+        <ul class="nav flex-column align-items-center text-center">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#Attività" class="nav-link p-0 text-body-secondary">Attività</a></li>
+          <li class="nav-item mb-2"><a href="#Escursioni" class="nav-link p-0 text-body-secondary">Escursioni</a></li>
+          <li class="nav-item mb-2"><a href="#Offerte" class="nav-link p-0 text-body-secondary">Offerte</a></li>
+          <li class="nav-item mb-2"><a href="#Contatti" class="nav-link p-0 text-body-secondary">Contatti</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-3 mb-3">
+        
+        <ul class="nav flex-column text-center">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Copyright</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Use of Terms</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-3 mb-3">
+        
+        <ul class="nav ">
+          <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+          <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+          <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
+          <li class="nav-item mb-2 p-2">
+            <p class="text-secondary"><i class="bi bi-telephone"></i> +39 123 456 7890 </p>
+          </li>
+          <li class="nav-item mb-2 p-2">
+            <p class="text-secondary"><i class="bi bi-geo-alt"></i> Via del Mare - Loc. Costa Verde 09031 Arbus, SU - Italia</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div> 
+  
+  
+  
+  
+  
+  
+  <!--AOS CDN-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!--MY JS-->
+  <script src="main.js"></script>
 </body>
 </html>
