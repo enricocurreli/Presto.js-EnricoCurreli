@@ -66,17 +66,17 @@ function createInterval(elementId, finalNumber, frequency){
 // createInterval(numCouple, 30, 180)
 
 
-let cntNum = document.querySelector("#cntNum")
+// let cntNum = document.querySelector("#cntNum")
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
     
-    if(window.scrollY > 150){
+//     if(window.scrollY > 150){
         
        
         
         
-    } else {
+//     } else {
         
-    }
+//     }
     
-})
+// })

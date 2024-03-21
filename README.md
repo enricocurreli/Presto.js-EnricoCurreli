@@ -46,6 +46,10 @@ clearIntervall -> ferma il setInterval
 
 
 
+INTERSECTION OBSERVER -> CLASSE -> PERSON
+
+
+
 
 
 
