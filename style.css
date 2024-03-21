@@ -20,7 +20,7 @@ body{
     font-weight: bold;
     font-style: normal;
     letter-spacing: 7px ;
-    font-size: 500%;
+    font-size: 300%;
     color: black;
   }
   
@@ -40,6 +40,7 @@ body{
   }
   .navbar-toggler{
     border: none;
+   
     
   }
   
@@ -66,7 +67,7 @@ body{
     
     background-color: #FAFAFA!important;
     backdrop-filter: blur(10px);
-    box-shadow: 5px 5px 26px #888888;
+    box-shadow: 5px 1px 26px #888888;
    
   }
 

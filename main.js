@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
         navbar.classList.add("nav-scrolled")
         navbarBrand.classList.add("transition")
         navbarBrand.innerHTML= "";
-        navbarBrand.innerHTML= `<img src="media/sardinia.png">`
+        navbarBrand.innerHTML= `<h3 class="resort-text display-3"> I Corsari - Resort</h3>`
         
         
         
