@@ -148,6 +148,7 @@ body{
   }
   
   .my_ctn1{
+    
     background: #FAFAFA;
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
@@ -329,3 +330,14 @@ body{
   }
   
 
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+  }

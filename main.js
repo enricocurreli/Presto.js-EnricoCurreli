@@ -1,8 +1,39 @@
+
+
+// VARIABILI
+
+
 let navbar = document.querySelector(".navbar")
 let navbarBrand = document.querySelector("#navbarBrand")
 
+let numBook = document.querySelector("#numBook")
+let numFam = document.querySelector("#numFam")
+let numCouple = document.querySelector("#numCouple")
+
+let isIntersected = false;
+
+let offerte = document.querySelector("#cardsWrapper");
 
 
+
+// FUNZIONI
+
+
+function createInterval(elementId, finalNumber, frequency){
+    let counter = 0
+    
+    let intervallo = setInterval(() => {
+        if(counter < finalNumber){
+            counter++
+            elementId.innerHTML = counter;
+        } else {
+            clearInterval(intervallo)
+        }
+    }, frequency);
+}
+
+
+// EVENTI 
 
 window.addEventListener("scroll", () => {
     
@@ -28,64 +59,8 @@ window.addEventListener("scroll", () => {
 })
 
 
-// let logoNav = documents.query.querySelector("#logoNav")
 
-// window.addEventListener("scroll", () => {
-
-//     if(window.scrollY > 240){
-
-//         logoNav.classList.add("d-none")
-
-//     } else {
-//         logoNav.classList.remove("d-none")
-//     }
-
-// })
-
-
-let numBook = document.querySelector("#numBook")
-let numFam = document.querySelector("#numFam")
-let numCouple = document.querySelector("#numCouple")
-
-
-function createInterval(elementId, finalNumber, frequency){
-    let counter = 0
-    
-    let intervallo = setInterval(() => {
-        if(counter < finalNumber){
-            counter++
-            elementId.innerHTML = counter;
-        } else {
-            clearInterval(intervallo)
-        }
-    }, frequency);
-}
-
-// createInterval(numBook, 80, 60)
-// createInterval(numFam, 50, 105)
-// createInterval(numCouple, 30, 180)
-
-// let check = false;
-
-// let cntNum = document.querySelector("#cntNum")
-
-// window.addEventListener("scroll", () => {
-    
-//     if(window.scrollY > 800 && check == false){
-        
-//         check = true
-        
-        
-        
-//     } else {
-        
-//     }
-    
-// })
-
-let isIntersected = false;
-
-//INTERSECTION OBSERVER NUMERI DINAMICI
+  //INTERSECTION OBSERVER NUMERI DINAMICI
 const intersectionObserver = new IntersectionObserver((entries) => {
     entries.forEach( (entry)=>{
         if(entry.isIntersecting && isIntersected == false){
@@ -107,13 +82,86 @@ intersectionObserver.observe(numFam)
 intersectionObserver.observe(numCouple)
 
 
-let offerte = document.querySelector("#Offerte");
+// OGGETTI
 
-let proposte = [
+let offerteWeek = [
 
-    {name: "Katana di Hattori Hanzo", categoria: "Accessori", prezzo: 500, img: "https://picsum.photos/200"},
-    {name: "Vaso Ming", categoria: "Arredamento", prezzo: 700, img: "https://picsum.photos/201"},
+    {
+        name: "Omaggio per bambini e ragazzi",
+        pacchetto: "Bambini e ragazzi fino a 17 anni",
+        pensione: "Pensione Completa", 
+        prenota: "1 mar 2024 - 31 mar 2024", 
+        soggiorna: "1 mar 2024 - 19 dic 2024",
+        img: "media/foto1offerte.jpeg"
+    },
 
 
+
+    {
+        name: "Pasqua e Pasquetta",
+        pacchetto: "Bambini da 0 a 8 anni non pagano",
+        pensione: "Pensione Completa", 
+        prenota: "1 mar 2024 - 28 mar 2024", 
+        soggiorna: "28 mar 2024 - 2 apr 2024",
+        img: "media/fotopasqua.jpeg"
+    },
+
+    {
+        name: "25 Aprile",
+        pacchetto: "SPA + un trattamento benessere a scelta",
+        pensione: "Pensione Completa", 
+        prenota: "1 apr 2024 - 23 apr 2024", 
+        soggiorna: "24 apr 2024 - 28 apr 2024",
+        img: "media/25aprile.jpg"
+    },
+
+    {
+        name: "Sa die de sa Sardigna",
+        pacchetto: "Degustazione vini delle Cantine locali",
+        pensione: "Pensione Completa", 
+        prenota: "1 apr 2024 - 23 apr 2024", 
+        soggiorna: "27 apr 2024 - 28 apr 2024",
+        img: "media/bandieraSarda.jpg"
+    },
 
 ]
+
+
+
+
+// CARDS OFFERTE 
+
+offerteWeek.forEach((annuncio) => {
+
+    let col = document.createElement("div");
+
+    col.classList.add("col-12", "col-md-4", "my-5", "d-flex", "justify-content-center");
+
+    col.innerHTML = ` 
+    <div class="card w-75">
+        <div class="card-body">
+        <img src=${annuncio.img} class="img_benessere1 shadow mt-5" alt="">
+        <h5 class="h2benessere2 mt-3">${annuncio.name}</h5>
+            
+            <hr>
+            <ul class="fa-ul text-secondary">
+            <li><span class="fa-li"><i class="fas fa-check"></i></span>${annuncio.pacchetto}
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>${annuncio.pensione}</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>${annuncio.prenota}</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>${annuncio.soggiorna}</li>
+                
+                
+            </ul>
+            <div class="d-grid py-4">
+                <a href="#" class="btn btn_nav text-uppercase">Scopri</a>
+            </div>
+            </div>
+      </div>
+      `
+      cardsWrapper.appendChild(col)
+})
+
+
+
+
+
