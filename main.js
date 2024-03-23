@@ -14,9 +14,102 @@ let isIntersected = false;
 
 let offerte = document.querySelector("#cardsWrapper");
 
+// modal
+
+// let nameForm = document.querySelector("#nameForm")
+// let btnForm = document.querySelector(".btnform")
+// let modalBody = document.querySelector("#modalBody")
+// let emailAddress = document.querySelector("#emailAddress")
+// let message = document.querySelector("#message")
+
+
+
+
+// OGGETTI
+
+let offerteWeek = [
+    
+
+    {
+        name: "Omaggio per bambini e ragazzi",
+        pacchetto: "Bambini e ragazzi fino a 17 anni",
+        pensione: "Pensione Completa", 
+        prenota: "1 mar 2024 - 31 mar 2024", 
+        soggiorna: "1 mar 2024 - 19 dic 2024",
+        img: "media/foto1offerte.jpeg"
+    },
+
+
+
+    {
+        name: "Pasqua e Pasquetta",
+        pacchetto: "Bambini da 0 a 8 anni non pagano",
+        pensione: "Pensione Completa", 
+        prenota: "1 mar 2024 - 28 mar 2024", 
+        soggiorna: "28 mar 2024 - 2 apr 2024",
+        img: "media/fotopasqua.jpeg"
+    },
+
+    {
+        name: "25 Aprile",
+        pacchetto: "SPA + un trattamento benessere a scelta",
+        pensione: "Pensione Completa", 
+        prenota: "1 apr 2024 - 23 apr 2024", 
+        soggiorna: "24 apr 2024 - 28 apr 2024",
+        img: "media/25aprile.jpg"
+    },
+
+    {
+        name: "Sa die de sa Sardigna",
+        pacchetto: "Degustazione vini delle Cantine locali",
+        pensione: "Pensione Completa", 
+        prenota: "1 apr 2024 - 23 apr 2024", 
+        soggiorna: "27 apr 2024 - 28 apr 2024",
+        img: "media/bandieraSarda.jpg"
+    },
+
+]
+
+
+// let contatti = [
+
+//     {
+//         name : "",
+//         email: "",
+//         message: "",
+//     }
+
+
+
+// ]
 
 
 // FUNZIONI
+
+//  function createForm(nome, email, message){
+
+//   contatti.push(  {"name": nome, "email": email, "message": message }  )
+//     console.log(contatti)
+//  }
+
+
+
+
+// function setModal() {
+
+//     contatti.forEach((persona)=>{
+
+//         let h3 = document.createElement("h3");
+
+//         h3.innerHTML = `<h3>Grazie ${persona.name} per averci contattato! Risponderemo appena possibile </h3>`
+        
+//         modalBody.appendChild(h3);
+//     })
+// }
+
+// contatti.setModal()
+
+
 
 
 function createInterval(elementId, finalNumber, frequency){
@@ -61,6 +154,7 @@ window.addEventListener("scroll", () => {
 
 
   //INTERSECTION OBSERVER NUMERI DINAMICI
+
 const intersectionObserver = new IntersectionObserver((entries) => {
     entries.forEach( (entry)=>{
         if(entry.isIntersecting && isIntersected == false){
@@ -80,52 +174,6 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 intersectionObserver.observe(numBook)
 intersectionObserver.observe(numFam)
 intersectionObserver.observe(numCouple)
-
-
-// OGGETTI
-
-let offerteWeek = [
-
-    {
-        name: "Omaggio per bambini e ragazzi",
-        pacchetto: "Bambini e ragazzi fino a 17 anni",
-        pensione: "Pensione Completa", 
-        prenota: "1 mar 2024 - 31 mar 2024", 
-        soggiorna: "1 mar 2024 - 19 dic 2024",
-        img: "media/foto1offerte.jpeg"
-    },
-
-
-
-    {
-        name: "Pasqua e Pasquetta",
-        pacchetto: "Bambini da 0 a 8 anni non pagano",
-        pensione: "Pensione Completa", 
-        prenota: "1 mar 2024 - 28 mar 2024", 
-        soggiorna: "28 mar 2024 - 2 apr 2024",
-        img: "media/fotopasqua.jpeg"
-    },
-
-    {
-        name: "25 Aprile",
-        pacchetto: "SPA + un trattamento benessere a scelta",
-        pensione: "Pensione Completa", 
-        prenota: "1 apr 2024 - 23 apr 2024", 
-        soggiorna: "24 apr 2024 - 28 apr 2024",
-        img: "media/25aprile.jpg"
-    },
-
-    {
-        name: "Sa die de sa Sardigna",
-        pacchetto: "Degustazione vini delle Cantine locali",
-        pensione: "Pensione Completa", 
-        prenota: "1 apr 2024 - 23 apr 2024", 
-        soggiorna: "27 apr 2024 - 28 apr 2024",
-        img: "media/bandieraSarda.jpg"
-    },
-
-]
-
 
 
 

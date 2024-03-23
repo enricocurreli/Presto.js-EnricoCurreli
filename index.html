@@ -270,7 +270,7 @@ data-aos-easing="ease-in-sine">
   <p class="mt-5 text-secondary ms-2">Benvenuti nella nostra splendida piscina all'aperto, un'oasi di relax e raffinatezza. Immersa nel giardino, la nostra piscina incanta con le sue acque cristalline che invitano a un rinfrescante tuffo. Circondata da comode sdraio e eleganti gazebo, offre il perfetto scenario per trascorrere giornate di puro relax sotto il sole dorato. Il nostro attento staff è sempre a vostra disposizione per soddisfare ogni vostro desiderio, offrendo un servizio impeccabile e discreto. Con cocktail artigianali preparati al momento e deliziosi snack gourmet. E quando il sole tramonta all'orizzonte, la nostra piscina si trasforma in un incantevole scenario romantico, illuminato da luci soffuse che creano un'atmosfera magica e suggestiva, perfetta per una serata indimenticabile.</p>
 </div>
 </div>
-</div>
+</div>–
 </div>
 
 </section> 
@@ -442,30 +442,34 @@ data-aos-easing="ease-in-sine" >
   
   <div class="container container-fluid my-5" id="cntNum">
     
-    <div class="row justify-content-evenly">
-      
-      <div class="col-12 my-5">
-        <h2 class="h2benessere2 fs-1 mt-5 text-center border-bottom">NELLE ULTIME 24H</h2>
-      </div>
-
-      <div class="row justify-content-evenly" id="numWrapper">
-
-        <div class="col-11 col-md-3 boxNumeri shadow mb-4">
-          <h6 class="fs-5">PRENOTAZIONI:</h6>
-          <p class="fs-2" id="numBook">0</p>
+      <div class="row justify-content-evenly">
+        <div class="col-12 my-5">
+          <h2 class="h2benessere2 fs-1 mt-5 text-center border-bottom">NELLE ULTIME 24H</h2>
         </div>
-        <div class="col-11 col-md-3 boxNumeri shadow mb-4">
-          <h6 class="fs-5">FAMIGLIE:</h6>
-          <p  class="fs-2" id="numFam">0</p>
-        </div>
-        <div class="col-11 col-md-3 boxNumeri shadow">
-          <h6 class="fs-5">COPPIE:</h6>
-          <p class="fs-2"id="numCouple">0</p>
-        </div>
+      </div>  
 
-    </div>
+        <div class="row justify-content-evenly" id="numWrapper">
 
-    </div>
+            <div class="col-11 col-md-3 shadow mt-5 py-3 colCont">
+                <h6 class="fs-5 titleBox text-center">PRENOTAZIONI:</h6>
+                <div class="col-12 boxNumeri mt-4">
+                  <p class="fs-2 mt-5" id="numBook">0</p>
+                </div>
+            </div>
+            <div class="col-11 col-md-3 shadow mt-5 py-3 colCont">
+              <h6 class="fs-5 titleBox text-center">FAMIGLIE:</h6>
+              <div class="col-12 boxNumeri mt-4">
+                <p  class="fs-2 mt-5" id="numFam">0</p>
+              </div>
+            </div>
+            <div class="col-11 col-md-3 shadow mt-5 py-3 colCont">
+              <h6 class="fs-5 titleBox text-center">COPPIE:</h6>
+              <div class="col-12 boxNumeri mt-4">
+                <p class="fs-2 mt-5"id="numCouple">0</p>
+              </div>
+            </div>
+
+        </div>
   </div>
   
   <!-- FINE NUMERI -->
@@ -485,6 +489,8 @@ data-aos-easing="ease-in-sine" >
     <div class="container-fluid p-5 my-5">
       <div class="row justify-content-center">
         <div class="col-xl-10">
+
+          
           <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
             <div class="card-body1 p-0">
               <div class="row g-0">
@@ -502,7 +508,7 @@ data-aos-easing="ease-in-sine" >
                     
                     <!-- Name Input -->
                     <div class="form-floating mb-3">
-                      <input class="form-control" id="name" type="text" placeholder="Nome e Cognome" data-sb-validations="" />
+                      <input class="form-control" id="nameForm" type="text" placeholder="Nome e Cognome" data-sb-validations="" />
                       <label for="name">Nome e Cognome</label>
                       <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                     </div>
@@ -518,7 +524,7 @@ data-aos-easing="ease-in-sine" >
                     <!-- Message Input -->
                     <div class="form-floating mb-3">
                       <textarea class="form-control" id="message" type="text" placeholder="Scrivi qui le tue richieste" style="height: 10rem;" data-sb-validations=""></textarea>
-                      <label for="message">Scrivi qui le tue richieste</label>
+                      <label for="message">Scrivi qui</label>
                       <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                     </div>
                     
@@ -528,7 +534,7 @@ data-aos-easing="ease-in-sine" >
                         <div class="fw-bolder">Richiesta Inviata</div>
                         
                       </div>
-                    </div>
+                    </div> 
                     
                     <!-- Submit error message -->
                     <div class="d-none" id="submitErrorMessage">
@@ -537,22 +543,29 @@ data-aos-easing="ease-in-sine" >
                     
                     <!--MODAL BUTTON-->
                     <div class="d-grid">
-                      <button class="btn btn_nav btn_cont btn-lg" id="submitButton" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">INVIA</button>
+                      <button class="btn btn_nav btn_cont btn-lg btnForm" id="submitButton"  type="submit" data-bs-toggle="modal" data-bs-target="#modal">INVIA</button>
                     </div>
                   </form>
                   <!-- End of contact form -->
                   
                   <!--MODAL-->
                   
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
+
                       <div class="modal-content">
+                        
                         <div class="modal-header border-0">
                           
                         </div>
-                        <div class="modal-body p-5">
-                         <h3>Grazie per averci contattato! Risponderemo appena possibile </h3>
+                        <div class="modal-body p-5" id="modalBody">
+
+
+                         <h3 class="py-5"> <span class="display-2 pb-5">Grazie per averci contattato!</span> Risponderemo appena possibile! </h3>
+
+
                         </div>
+
                         <div class="modal-footer border-0">
 
                           <button type="button" class="btn btn_nav" data-bs-dismiss="modal">Chiudi</button>
@@ -571,8 +584,6 @@ data-aos-easing="ease-in-sine" >
       </div>
     </div>
     
-    <!-- CDN Link to SB Forms Scripts -->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </section> 
   
   <!--FOOTER-->

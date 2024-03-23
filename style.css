@@ -301,26 +301,45 @@ body{
     transition: all 0.2s;
   }
   
+
   .contatti{
     padding-top: 10%
   }
+  .colCont{
+  
+    border-radius: 15px;
+    
+  }
 
+  #numFam, #numBook, #numCouple{
+    color: #CC2936;
+  }
   .boxNumeri{
+    
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     color: black;
-    height: 150px;
-    border-radius: 20px;
-    border: 1px solid #CC2936;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(media/calendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
     
+  }
+
+  .titleBox{
+
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
    
-    
   }
   
   
@@ -341,3 +360,6 @@ body{
       opacity: 1;
     }
   }
+
+
+  
