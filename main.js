@@ -71,17 +71,7 @@ let offerteWeek = [
 ]
 
 
-// let contatti = [
 
-//     {
-//         name : "",
-//         email: "",
-//         message: "",
-//     }
-
-
-
-// ]
 
 
 // FUNZIONI
@@ -151,7 +141,7 @@ window.addEventListener("scroll", () => {
     
 })
 
-
+// let isIntersected = false;
 
   //INTERSECTION OBSERVER NUMERI DINAMICI
 
@@ -166,7 +156,7 @@ const intersectionObserver = new IntersectionObserver((entries) => {
             isIntersected = true;
             setTimeout(() => {
                 isIntersected = false;
-            }, 10000);
+            }, 2000);
         }
     } )
 })
@@ -211,5 +201,18 @@ offerteWeek.forEach((annuncio) => {
 
 
 
+let nameForm = document.querySelector("#nameForm")
+let btnForm = document.querySelector(".btnform")
+let modalBody = document.querySelector("#modalBody")
+
+let contatti = [
+
+    {
+        name : "",
+        email: "",
+        message: "",
+    }
 
 
+
+]
