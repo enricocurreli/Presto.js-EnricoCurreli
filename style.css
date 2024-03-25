@@ -164,6 +164,8 @@ body{
     letter-spacing: 5px;
   
   }
+
+  
   .p_sect1{
     font-size: 130%;
     text-align: center;
@@ -348,6 +350,32 @@ body{
     background: #FAFAFA;
   }
   
+/* --------------------------------------- */
+/* PAGINA 2 */
+
+.h2_sect2{
+  padding-top: 5%;
+  font-size: 250%;
+  text-align: center;
+  letter-spacing: 8px;
+
+}
+.p_sect2{
+  font-size: 110%;
+  text-align: center;
+}
+
+.col-stanze {
+  border-left:3px solid #CC2936 ;
+  
+}
+
+.position_sticky{
+  position: sticky;
+  top: 150px;
+}
+
+
 
   @media (min-width: 992px) {
     .pricing .card:hover {

@@ -1,0 +1,176 @@
+ [
+    {
+        "nome":"Standard" ,
+        "ospiti": 1,
+        "prezzo": 200,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Standard" ,
+        "ospiti": 1,
+        "prezzo": 100,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 1,
+        "prezzo": 250,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 1,
+        "prezzo": 150,
+        "pensione": "mezza pensione"
+    },
+    
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 1,
+        "prezzo": 280,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 1,
+        "prezzo": 180,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 1,
+        "prezzo": 400,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 1,
+        "prezzo": 300,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Standard" ,
+        "ospiti": 2,
+        "prezzo": 250,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Standard" ,
+        "ospiti": 2,
+        "prezzo": 150,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 2,
+        "prezzo": 300,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 2,
+        "prezzo": 200,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 2,
+        "prezzo": 330,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 2,
+        "prezzo": 230,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 2,
+        "prezzo": 500,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 2,
+        "prezzo": 400,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Standard" ,
+        "ospiti": 3,
+        "prezzo": 300,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Standard" ,
+        "ospiti": 3,
+        "prezzo": 200,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 3,
+        "prezzo": 350,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Superior" ,
+        "ospiti": 3,
+        "prezzo": 250,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 3,
+        "prezzo": 380,
+        "pensione": "pensione completa"
+    },
+    {
+        "nome":"Deluxe" ,
+        "ospiti": 3,
+        "prezzo": 280,
+        "pensione": "mezza pensione"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 3,
+        "prezzo": 600,
+        "pensione": "pensione completa"
+    },
+
+    {
+        "nome":"Suite" ,
+        "ospiti": 3,
+        "prezzo": 500,
+        "pensione": "mezza-pensione"
+    }
+   
+
+
+
+
+
+
+
+]

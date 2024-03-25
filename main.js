@@ -141,7 +141,7 @@ window.addEventListener("scroll", () => {
     
 })
 
-// let isIntersected = false;
+
 
   //INTERSECTION OBSERVER NUMERI DINAMICI
 
@@ -156,10 +156,10 @@ const intersectionObserver = new IntersectionObserver((entries) => {
             isIntersected = true;
             setTimeout(() => {
                 isIntersected = false;
-            }, 2000);
+            }, 5000);
         }
     } )
-})
+})  
 
 intersectionObserver.observe(numBook)
 intersectionObserver.observe(numFam)
@@ -199,20 +199,3 @@ offerteWeek.forEach((annuncio) => {
       cardsWrapper.appendChild(col)
 })
 
-
-
-let nameForm = document.querySelector("#nameForm")
-let btnForm = document.querySelector(".btnform")
-let modalBody = document.querySelector("#modalBody")
-
-let contatti = [
-
-    {
-        name : "",
-        email: "",
-        message: "",
-    }
-
-
-
-]
