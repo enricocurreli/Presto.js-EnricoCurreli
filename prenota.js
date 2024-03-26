@@ -61,7 +61,7 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
             
             </ul>
             <div class="d-grid py-4">
-            <a href="#" class="btn btn_nav text-uppercase">Seleziona</a>
+            <a href="#" class="btn btn_nav text-uppercase" role="button" id="btnSchede${i}">Seleziona</a>
             </div>
             </div>
             </div>
@@ -166,6 +166,7 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
     let prices = data.map((price) => price.prezzo)
     let max = Math.max(...prices);
     let min = Math.min(...prices);
+
     inputPrice.max = max;
     inputPrice.min = min;
     inputPrice.value = max;
@@ -191,9 +192,30 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
 
 
 
+    // CARRELLO
 
+    let bookingWrapper = document.querySelector("#bookingWrapper")
 
+    function createTable(array){
 
+        bookingWrapper.innerHTML = "";
+
+        array.forEach( (table)=>{
+            let tr = document.createElement("tr")
+            tr.innerHTML = `
+                            
+                            <td>${table.nome}</td>
+                            <td>${table.ospiti}</td>
+                            <td>${table.prezzo}</td>
+                            <td>${table.pensione}</td>
+                            <td>1000€</td>
+                           
+                        `
+            bookingWrapper.appendChild(tr)
+        } )
+    }
+   
+    createTable(data)
     
     // FINE FETCH
 })  

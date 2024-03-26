@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Presto Js</title>
-  
+  <title>Prenotazione</title>
+
+   <!-- SWIPER CSS  -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!--CDN AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--CDN BOOTSTRAP-->
@@ -126,7 +130,7 @@
         <!-- FILTRI PREZZO   -->
         
         
-         <div class="px-4" >
+        <div class="px-4" >
           <h4 class="h2benessere2 mt-5 mb-3">PREZZO</h4>
           
           
@@ -134,24 +138,11 @@
           <label for="customRange1" class="form-label h2benessere2 fs-5"> €<span id="currentValue"></span></label>
         </div>
 
-        <!--FILTRI OSPITI-->
 
-        <div id="radioWrapperHost" class=" px-4">
-        
-          <h4 class="h2benessere2   mt-5 mb-3">PENSIONE</h4>
-          <div class="form-check">
-            <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="All1" checked>
-            <label class="form-check-label h2benessere2 fs-5" for="flexRadioDefault1">
-              VEDI TUTTO
-            </label>
-          </div>
-          
-        </div>
+       
 
 
       </div>
-      
-      
       
     </div>
     
@@ -167,6 +158,46 @@
   </div>
 </div>
 
+
+ <!--TABLE -->
+<div class="container h2benessere2 mt-5 ">
+  <div class="row justify-content-end  ">
+    <div class="col-9 ">
+      <h4 class=" mt-5 mb-5 text-center ">CARRELLO</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Camera</th>
+        <th scope="col">Ospiti</th>
+        <th scope="col">€/notte</th>
+        <th scope="col">Pensione</th>
+        <th scope="col">TOT</th>
+      </tr>
+    </thead>
+    <!-- <tbody id="bookingWrapper"> -->
+
+      <!-- <tr>
+        <th scope="row">1</th>
+        <td>Fabrizio</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> -->
+
+    </tbody>
+  </table>
+    </div>
+  </div>
+  
+ </div>
 
 
 
@@ -185,7 +216,7 @@
       <h3 class="resort-text display-5 text-center "> I Corsari</h3>
       <h3 class="resort-text display-5 text-center"> Resort</h3>
       <h6 class="stelline text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h6>
-      <p class="text-body-secondary ms-2 text-center">Enrico Curreli © 2024 Company, Inc</p>
+      <p class="text-body-secondary text-center">Enrico Curreli © 2024</p>
     </div>
     
     
@@ -203,20 +234,20 @@
     
     <div class="col-md-3 mb-3">
       
-      <ul class="nav flex-column text-center">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Copyright</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Use of Terms</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+      <ul class="nav flex-column text-center align-items-center">
+        <li class="nav-item mb-2"><a href="#" class="nav-link1 p-0 text-body-secondary">Privacy Policy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link1 p-0 text-body-secondary">Copyright</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link1 p-0 text-body-secondary">Use of Terms</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link1 p-0 text-body-secondary">About us</a></li>
       </ul>
     </div>
     
     <div class="col-md-3 mb-3">
       
       <ul class="nav">
-        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
-        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
-        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
+        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link1 p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link1 p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+        <li class="nav-item mb-2 p-2"><a href="#" class="nav-link1 p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
         <li class="nav-item mb-2 p-2">
           <p class="text-secondary"><i class="bi bi-telephone"></i> +39 123 456 7890 </p>
         </li>
@@ -232,7 +263,8 @@
 
 
 
-
+<!-- SWIPER JS  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!--AOS CDN-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

@@ -53,6 +53,31 @@ body{
   .navbar-toggler:focus{
     box-shadow: none;
   }
+  .nav-link{
+    position: relative;
+    
+  }
+  .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #CC2936;
+    transition: .5s;
+  }
+  .nav-link:hover:before{
+    width: 90%;
+  }
+
+  .nav-link1{
+    
+    text-decoration: none;
+    
+  }
+
+
   
   .nav-cont{
     border: 0px;
@@ -353,39 +378,47 @@ body{
 /* --------------------------------------- */
 /* PAGINA 2 */
 
-.h2_sect2{
+  .h2_sect2{
   padding-top: 5%;
   font-size: 250%;
   text-align: center;
   letter-spacing: 8px;
 
-}
-.p_sect2{
-  font-size: 110%;
-  text-align: center;
-}
+  }
+  .p_sect2{
+    font-size: 110%;
+    text-align: center;
+  }
 
-/* .col-filtri {
-  border-right: 3px solid #CC2936 ;
-  border-bottom: 3px solid #CC2936 ;
-  
-} */
+  /* .col-filtri {
+    border-right: 3px solid #CC2936 ;
+    border-bottom: 3px solid #CC2936 ;
+    
+  } */
 
-.position_sticky{
-  position: sticky;
-  top: 150px;
-}
-/* .form-check-input:checked {
-  background-color: #CC2936 ;
-  border-color: #CC2936 ;
-} */
+  .position_sticky{
+    position: sticky;
+    top: 150px;
+  }
+  /* .form-check-input:checked {
+    background-color: #CC2936 ;
+    border-color: #CC2936 ;
+  } */
 
-.box-filtri{
-  background:#CC2936; 
-  border-radius: 20px;
-  padding: 10px;
-}
+  .box-filtri{
+    background:#CC2936; 
+    border-radius: 20px;
+    padding: 10px;
+  }
 
+  .table {
+    border: 3px solid #CC2936;
+    
+  }
+
+  td {
+    border: none;
+  }
 
   @media (min-width: 992px) {
     .pricing .card:hover {
