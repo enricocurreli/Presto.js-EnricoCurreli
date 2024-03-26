@@ -43,10 +43,10 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
             
             let col = document.createElement("div");
             
-            col.classList.add("col-12", "col-lg-4", "my-3", );
+            col.classList.add("col-10", "col-lg-4","my-3", );
             
             col.innerHTML = ` 
-            <div class="card w-75">
+            <div class="card ">
             <div class="card-body">
             <img src="https://picsum.photos/20${i}" class="img-card card-img-top" alt="...">
             <h5 class="text-center h2benessere2 mt-3 fs-3">${stanza.nome}</h5>
@@ -151,17 +151,49 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
    })
 
 
+
+
+   let inputPrice = document.querySelector("#inputPrice")
+   let currentValue = document.querySelector("#currentValue")
+
+
+
+
  // RANGE MAX & MIN PRICES
 
-function findMaxMinPrice(){
+    function findMaxMinPrice(){
 
     let prices = data.map((price) => price.prezzo)
     let max = Math.max(...prices);
     let min = Math.min(...prices);
-    
+    inputPrice.max = max;
+    inputPrice.min = min;
+    inputPrice.value = max;
+    currentValue.innerHTML = max
 }
 
-findMaxMinPrice()
+    findMaxMinPrice()
+
+    // FILTRO PER PREZZO
+
+    function filterByPrice(){
+
+        let filtered = data.filter((el)=>el.prezzo <= inputPrice.value)
+        createCard(filtered)
+
+    }
+
+    inputPrice.addEventListener("input", ()=> {
+
+        currentValue.innerHTML = inputPrice.value
+        filterByPrice()
+    })
+
+
+
+
+
+
     
     // FINE FETCH
 })  

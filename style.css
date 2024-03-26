@@ -365,16 +365,26 @@ body{
   text-align: center;
 }
 
-.col-stanze {
-  border-left:3px solid #CC2936 ;
+/* .col-filtri {
+  border-right: 3px solid #CC2936 ;
+  border-bottom: 3px solid #CC2936 ;
   
-}
+} */
 
 .position_sticky{
   position: sticky;
   top: 150px;
 }
+/* .form-check-input:checked {
+  background-color: #CC2936 ;
+  border-color: #CC2936 ;
+} */
 
+.box-filtri{
+  background:#CC2936; 
+  border-radius: 20px;
+  padding: 10px;
+}
 
 
   @media (min-width: 992px) {
@@ -391,3 +401,11 @@ body{
 
 
 
+  @media (max-width: 982px) {
+
+    .col-filtri {
+      border-left: none ;
+      
+      
+    }
+  }

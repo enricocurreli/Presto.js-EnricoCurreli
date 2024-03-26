@@ -101,44 +101,65 @@
 <div class="container-fluid">
   <div class="row">
     
-    <!-- FILTRI -->
-    <div class="col-12 col-lg-3">
+    <!-- FILTRI col-sx -->
+    <div class="col-12 col-lg-3 col-filtri">
       <h2 class="text-center h2benessere2 my-5 ">FILTRI</h2>
       
       
       <!-- FILTRI CAMERE -->
-      <div id="radioWrapper" class=" px-4">
+      <div class="box-filtri position_sticky">
+
+        <div id="radioWrapper" class=" px-4">
         
-        <h4 class="h2benessere2  px-4 mt-5 mb-3">CAMERE</h4>
-        <div class="form-check">
-          <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="All" checked>
-          <label class="form-check-label h2benessere2 fs-5" for="flexRadioDefault1">
-            Tutte le camere
-          </label>
+          <h4 class="h2benessere2   mt-5 mb-3">CAMERE</h4>
+          <div class="form-check">
+            <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="All" checked>
+            <label class="form-check-label h2benessere2 fs-5" for="flexRadioDefault1">
+              Tutte le camere
+            </label>
+          </div>
+          
         </div>
+
         
-      </div>
-      
-      <!-- FILTRI PREZZO   -->
-      
-      
-      
-      <div class="px-4" >
-        <h4 class="h2benessere2  px-4 mt-5 mb-3">PREZZO</h4>
         
-        <label for="customRange1" class="form-label">Example range</label>
-        <input type="range" class="form-range" id="customRange1" max="" min="" value="">
+        <!-- FILTRI PREZZO   -->
+        
+        
+         <div class="px-4" >
+          <h4 class="h2benessere2 mt-5 mb-3">PREZZO</h4>
+          
+          
+          <input id="inputPrice" type="range" class="form-range"  max="" min="" value="">
+          <label for="customRange1" class="form-label h2benessere2 fs-5"> €<span id="currentValue"></span></label>
+        </div>
+
+        <!--FILTRI OSPITI-->
+
+        <div id="radioWrapperHost" class=" px-4">
+        
+          <h4 class="h2benessere2   mt-5 mb-3">PENSIONE</h4>
+          <div class="form-check">
+            <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="All1" checked>
+            <label class="form-check-label h2benessere2 fs-5" for="flexRadioDefault1">
+              VEDI TUTTO
+            </label>
+          </div>
+          
+        </div>
+
+
       </div>
       
       
       
     </div>
     
-    <!-- stanze -->
-    <div class="col-12 col-lg-8 col-stanze col-sfondo">
+    <!-- OPZ STANZE col dx -->
+    <div class="col-12 col-lg-8  pb-3">
       <h2 class="text-center h2benessere2 my-5">LE CAMERE</h2>
       <div class="container-fluid">
-        <div class="row justify-content-evenly ps-5" id="roomsWrapper">
+        <div class="row justify-content-between ps-5 pricing" id="roomsWrapper">
           <!--camere-->
         </div>
       </div>
@@ -157,19 +178,19 @@
 <div class="container-fluid footer_d px-0">
   
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border_footer m-0 p-0">
-    <div class="col-md-3 mb-3 order-last order-md-first ps-5">
+    <div class="col-md-4 mb-3 order-last order-md-first ps-5">
       <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       </a>
       <h3 class="resort-text display-5 text-center "> I Corsari</h3>
       <h3 class="resort-text display-5 text-center"> Resort</h3>
       <h6 class="stelline text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h6>
-      <p class="text-body-secondary ms-2">Enrico Curreli © 2024 Company, Inc</p>
+      <p class="text-body-secondary ms-2 text-center">Enrico Curreli © 2024 Company, Inc</p>
     </div>
     
     
     
-    <div class="col-md-3 mb-3">
+    <!-- <div class="col-md-3 mb-3">
       
       <ul class="nav flex-column align-items-center text-center">
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
@@ -178,7 +199,7 @@
         <li class="nav-item mb-2"><a href="#Offerte" class="nav-link p-0 text-body-secondary">Offerte</a></li>
         <li class="nav-item mb-2"><a href="#Contatti" class="nav-link p-0 text-body-secondary">Contatti</a></li>
       </ul>
-    </div>
+    </div> -->
     
     <div class="col-md-3 mb-3">
       
@@ -192,7 +213,7 @@
     
     <div class="col-md-3 mb-3">
       
-      <ul class="nav ">
+      <ul class="nav">
         <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
         <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
         <li class="nav-item mb-2 p-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-tiktok"></i></a></li>
