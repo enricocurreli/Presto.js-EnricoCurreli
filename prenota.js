@@ -61,7 +61,7 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
             
             </ul>
             <div class="d-grid py-4">
-            <a href="#" class="btn btn_nav text-uppercase" role="button" id="btnSchede${i}">Seleziona</a>
+            <a href="#" class="btn btn_nav text-uppercase" role="button" id="btnSchede">Seleziona</a>
             </div>
             </div>
             </div>
@@ -82,7 +82,9 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
     function setRooms() {
 
         let rooms = data.map((elemento) => elemento.nome)  
-        
+
+        console.log(rooms); // rooms array con i solo i nomi ;
+
         // Il map()metodo delle Arrayistanze crea un nuovo array popolato con i risultati della chiamata a una funzione fornita su ogni elemento nell'array chiamante.
 
         let uniqueCategories = [] ;   //  array di appoggio
@@ -97,6 +99,9 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
             }
 
         })
+
+        console.log(uniqueCategories);
+        // creo un btn per ogni elemento
 
         uniqueCategories.forEach((nome)=> {
 
@@ -113,39 +118,42 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
 
     }
 
-    setRooms()
+    setRooms() // ora i pulsati sono stati creati
+
+
 
     // FILTRI X CAMERE
 
     let checkInput =  document.querySelectorAll(".form-check-input")
 
     // find() si ferma quando incontra il primo elemento che soddisfa la condizione
-
+    
     function filterByRoom() {
-
+        
         let radioBtn = Array.from(checkInput); // trasforma in un array una nodelist
         
         let checked = radioBtn.find((elemento)=> elemento.checked == true)
         console.log(checked)
         
         if(checked.id == "All") {
-
+            
             createCard(data)
-
+            
         } else{
-
+            
             let filtered = data.filter((elemento)=> elemento.nome == checked.id)
             createCard(filtered)
         }
         
     }
-   
-
-
-   checkInput.forEach((input)=>{
-
+    
+    
+    
+    checkInput.forEach((input)=> {
+        
         input.addEventListener("click", () => {
             filterByRoom()
+            console.log(checkInput);
         })
 
    })
@@ -194,28 +202,28 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
 
     // CARRELLO
 
-    let bookingWrapper = document.querySelector("#bookingWrapper")
+    // let bookingWrapper = document.querySelector("#bookingWrapper")
 
-    function createTable(array){
+    // function createTable(array){
 
-        bookingWrapper.innerHTML = "";
+    //     bookingWrapper.innerHTML = "";
 
-        array.forEach( (table)=>{
-            let tr = document.createElement("tr")
-            tr.innerHTML = `
+    //     array.forEach( (table)=>{
+    //         let tr = document.createElement("tr")
+    //         tr.innerHTML = `
                             
-                            <td>${table.nome}</td>
-                            <td>${table.ospiti}</td>
-                            <td>${table.prezzo}</td>
-                            <td>${table.pensione}</td>
-                            <td>1000€</td>
+    //                         <td>${table.nome}</td>
+    //                         <td>${table.ospiti}</td>
+    //                         <td>${table.prezzo}</td>
+    //                         <td>${table.pensione}</td>
+    //                         <td>1000€</td>
                            
-                        `
-            bookingWrapper.appendChild(tr)
-        } )
-    }
+    //                     `
+    //         bookingWrapper.appendChild(tr)
+    //     } )
+    // }
    
-    createTable(data)
+    // createTable(data)
     
     // FINE FETCH
 })  
