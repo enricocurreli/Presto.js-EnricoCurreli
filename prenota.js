@@ -294,8 +294,9 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
 
 
     let swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
+        spaceBetween: 0,
         centeredSlides: true,
+        loop: true,
         autoplay: {
 
           delay: 3500,
@@ -313,6 +314,8 @@ fetch("./prenota.JSON").then( (response) => response.json() ).then((data) =>{
       });
 
 
+     
+    
 
 
 

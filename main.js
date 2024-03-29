@@ -199,3 +199,109 @@ offerteWeek.forEach((annuncio) => {
       cardsWrapper.appendChild(col)
 })
 
+
+// SWIPER
+
+
+let swiper = new Swiper(".mySwiper", {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+
+
+
+
+  let recensioni = [
+
+    {
+        titolo: "Una terra tutta da scoprire",
+        testo: "Le escursioni via terra organizzate dal Residence sono state veri e propri viaggi nell'anima della natura. Attraverso sentieri immersi nel verde, abbiamo avuto l'opportunità di avventurarci tra boschi secolari, ammirando la ricca flora e fauna che caratterizzano questa regione. Le guide esperte hanno condiviso con noi la loro conoscenza della zona, mostrandoci punti di interesse nascosti lungo il percorso.",
+        voto: 4.5 ,
+        nome: "Enrico"
+    },
+    {
+        titolo: "Cucina eccezionale",
+        testo: "Non posso non menzionare la cucina del Residence, che ci ha deliziato con autentiche prelibatezze locali e piatti internazionali. Ogni pasto è stato preparato con cura e presentato in modo impeccabile, soddisfacendo ogni nostro desiderio culinario.",
+        voto: 5 ,
+        nome: "Elena"
+    },
+    {
+        titolo: "Trekking nei Segreti della Natura",
+        testo: "Le escursioni via terra hanno offerto l'opportunità di praticare attività all'aria aperta come il trekkinge il ciclismo, permettendoci di vivere appieno la bellezza e l'energia della natura circostante. Ogni passo ci ha portato a nuove scoperte e avventure, arricchendo il nostro soggiorno con esperienze indimenticabili e momenti di pura gioia e divertimento.",
+        voto: 4.9 ,
+        nome: "Fabrizio"
+    },
+    {
+        titolo: "Sentirsi a casa",
+        testo: "Il Residence I Corsari è un gioiello nascosto che consiglio vivamente a chiunque cerchi un soggiorno indimenticabile. Con il suo personale premuroso, la posizione incantevole, la splendida piscina e la cucina deliziosa, è il luogo perfetto per rigenerarsi e creare ricordi preziosi. Sicuramente torneremo in futuro per vivere nuovamente questa straordinaria esperienza.",
+        voto: 4.4 ,
+        nome: "Matteo"
+    },
+    {
+        titolo: "Avventure marine da sogno",
+        testo: "Oltre alle numerose attrazioni offerte dal Residence [Nome], una delle esperienze più straordinarie che abbiamo vissuto durante il nostro soggiorno sono state le escursioni via mare. Grazie alla collaborazione con operatori locali esperti, abbiamo avuto l'opportunità di esplorare le acque cristalline e le meraviglie naturali della zona circostante.",
+        voto: 4.7 ,
+        nome: "Carla"
+    },
+    {
+        titolo: "Escursioni via mare indescrivili",
+        testo: "Le escursioni via mare organizzate dal Residence sono state davvero indimenticabili. Abbiamo avuto la possibilità di navigare lungo coste mozzafiato, scoprendo calette segrete e spiagge appartate che sembravano provenire direttamente da una cartolina. Gli skipper esperti hanno reso l'esperienza ancora più speciale, condividendo con noi la loro conoscenza della zona.",
+        voto: 4.5 ,
+        nome: "Ignazio"
+    },
+    {
+        titolo: "Meritato Relax",
+        testo: "Soggiornare presso il Residence I Corsari è stata un'esperienza indimenticabile sotto molti aspetti. Innanzitutto, vorrei sottolineare la straordinaria gentilezza e disponibilità del personale. Dal momento in cui siamo arrivati fino alla nostra partenza, siamo stati accolti con un sorriso caloroso e un servizio impeccabile, rendendo il nostro soggiorno estremamente piacevole e confortevole.",
+        voto: 5 ,
+        nome: "Cristina"
+    },
+   
+  ]
+
+  let swiper_wrapper = document.querySelector("#swiper_wrapper")
+
+  recensioni.forEach((elemento, i)=> {
+
+    let slide = document.createElement("div");
+    slide.classList.add("swiper-slide");
+
+    slide.innerHTML = `
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 pe-0 mt-2 d-flex justify-content-center">
+        <img src="https://picsum.photos/20${i}" alt="">
+        
+      </div>
+      <div class="col-6 ps-0 d-flex justify-content-start align-items-center">
+        <h5 class="h2benessere2 fs-4 text-center">${elemento.nome}</h5>
+        
+      </div>
+    </div>
+  </div>
+      
+        <hr>
+        <div class="row justify-content-center">
+          <div class="col-10  d-flex justify-content-center flex-column">
+          <h5 class="h2benessere2 fs-4 text-center">${elemento.titolo}</h5>
+            <p class=" text-secondary pRew">${elemento.testo}</p>
+            
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-2 d-flex justify-content-center">
+            <h6 class="pRew fs-6">Voto: <span class="text-secondary">${elemento.voto}</span><i class="bi bi-star-fill star fs-5"></i>
+            </h6>
+          </div>
+        </div>
+    
+    `
+    swiper_wrapper.appendChild(slide);
+  })

@@ -368,33 +368,6 @@ body{
     
   }
 
-  /* SWIPER */
-
-  .swiper {
-    margin-top: 5%;
-    width: 50%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    width: 80%;
-    background: #fff;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-
-  
-  .swiper-slide img {
-    
-   margin:5% ;
-    width: 30%;
-    border-radius: 50%;
-    border: 2px solid #CC2936;
-  }
-
-
   .titleBox{
 
     font-family: "Bitter", serif;
@@ -411,25 +384,76 @@ body{
     background: #FAFAFA;
   }
   
-  .ctnboxRew{
+/* --------------------------------------- */
+/* PAGINA 2 */
 
-    margin-top: 20%;
+  .h2_sect2{
+  padding-top: 5%;
+  font-size: 250%;
+  text-align: center;
+  letter-spacing: 8px;
+
+  }
+  .p_sect2{
+    font-size: 110%;
+    text-align: center;
   }
 
-  .pRew{
-    font-family: "Bitter", serif;
-    font-style:normal;
-    font-weight:400;
-    font-size: small;
-    height: 80%;
-    padding: 0px 10px 0px 10px;
+  /* .col-filtri {
+    border-right: 3px solid #CC2936 ;
+    border-bottom: 3px solid #CC2936 ;
     
+  } */
+
+  .position_sticky{
+    position: sticky;
+    top: 150px;
+  }
+  /* .form-check-input:checked {
+    background-color: #CC2936 ;
+    border-color: #CC2936 ;
+  } */
+
+  .box-filtri{
+    background:#CC2936; 
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .table {
+    border: 3px solid #CC2936;
     
   }
-  .star{
 
-    color: gold;
+  /* SWIPER */
+
+  .swiper {
+    width: 100%;
+    height: 80vh;
+    background: #FAFAFA;
   }
+  .swipper-2{
+    height: 100vh !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #FAFAFA;
+  }
+
+  
 
   @media (min-width: 992px) {
     .pricing .card:hover {
@@ -443,41 +467,13 @@ body{
     }
   }
 
-  @media(max-width:540px) {
 
 
-    .swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-  
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 90%;
-      height:100%;
-      margin-top: 0%;
-      
-    }
+  @media (max-width: 982px) {
 
-    .pRew{
-      font-family: "Bitter", serif;
-      font-style:normal;
-      font-weight:400;
-      font-size: 80%;
-      height: 80%;
-      padding: 0px 10px 0px 10px;
+    .col-filtri {
+      border-left: none ;
       
       
     }
-    
-    .swiper-slide img {
-    
-       
-       width: 40%;
-       border-radius: 50%;
-       border: 2px solid #CC2936;
-     }
-
   }
