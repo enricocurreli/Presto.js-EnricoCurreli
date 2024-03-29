@@ -176,9 +176,9 @@ offerteWeek.forEach((annuncio) => {
     col.classList.add("col-12", "col-md-4", "my-5", "d-flex", "justify-content-center");
 
     col.innerHTML = ` 
-    <div class="card w-75">
+    <div class="card">
         <div class="card-body">
-        <img src=${annuncio.img} class="img_benessere1 shadow mt-5" alt="">
+        <img src=${annuncio.img} class="img_benessere1 shadow mt-2" alt="">
         <h5 class="h2benessere2 mt-3">${annuncio.name}</h5>
             
             <hr>

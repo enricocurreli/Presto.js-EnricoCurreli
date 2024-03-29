@@ -3,62 +3,71 @@
         "nome":"Standard" ,
         "ospiti": 1,
         "prezzo": 200,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/standard.jpeg"
     },
 
     {
         "nome":"Standard" ,
         "ospiti": 1,
         "prezzo": 100,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/standard.jpeg"
     },
 
     {
         "nome":"Superior" ,
         "ospiti": 1,
         "prezzo": 250,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/superior.jpeg"
     },
 
     {
         "nome":"Superior" ,
         "ospiti": 1,
         "prezzo": 150,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/superior.jpeg"
     },
     
     {
         "nome":"Deluxe" ,
         "ospiti": 1,
         "prezzo": 280,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/deluxe.jpeg"
     },
 
     {
         "nome":"Deluxe" ,
         "ospiti": 1,
         "prezzo": 180,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/deluxe.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 1,
         "prezzo": 400,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/suite.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 1,
         "prezzo": 300,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/suite.jpeg"
     },
 
     {
         "nome":"Standard" ,
         "ospiti": 2,
         "prezzo": 250,
+         "img": "media/standard.jpeg",
         "pensione": "Pensione Completa"
     },
 
@@ -66,6 +75,7 @@
         "nome":"Standard" ,
         "ospiti": 2,
         "prezzo": 150,
+         "img": "media/standard.jpeg",
         "pensione": "Mezza Pensione"
     },
 
@@ -73,97 +83,111 @@
         "nome":"Superior" ,
         "ospiti": 2,
         "prezzo": 300,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/superior.jpeg"
     },
 
     {
         "nome":"Superior" ,
         "ospiti": 2,
         "prezzo": 200,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/superior.jpeg"
     },
 
     {
         "nome":"Deluxe" ,
         "ospiti": 2,
         "prezzo": 330,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/deluxe.jpeg"
     },
 
     {
         "nome":"Deluxe" ,
         "ospiti": 2,
         "prezzo": 230,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/deluxe.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 2,
         "prezzo": 500,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/suite.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 2,
         "prezzo": 400,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/suite.jpeg"
     },
 
     {
         "nome":"Standard" ,
         "ospiti": 3,
         "prezzo": 300,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/standard.jpeg"
     },
 
     {
         "nome":"Standard" ,
         "ospiti": 3,
         "prezzo": 200,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/standard.jpeg"
     },
 
     {
         "nome":"Superior" ,
         "ospiti": 3,
         "prezzo": 350,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/superior.jpeg"
     },
 
     {
         "nome":"Superior" ,
         "ospiti": 3,
         "prezzo": 250,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/superior.jpeg"
     },
 
     {
         "nome":"Deluxe" ,
         "ospiti": 3,
         "prezzo": 380,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/deluxe.jpeg"
     },
     {
         "nome":"Deluxe" ,
         "ospiti": 3,
         "prezzo": 280,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/deluxe.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 3,
         "prezzo": 600,
-        "pensione": "Pensione Completa"
+        "pensione": "Pensione Completa",
+        "img": "media/suite.jpeg"
     },
 
     {
         "nome":"Suite" ,
         "ospiti": 3,
         "prezzo": 500,
-        "pensione": "Mezza Pensione"
+        "pensione": "Mezza Pensione",
+        "img": "media/suite.jpeg"
     }
    
 

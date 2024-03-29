@@ -36,6 +36,11 @@ body{
     font-weight:400;
     color: black;
   }
+  .navbar{
+
+    background:rgb(235, 234, 235, 0.3); 
+
+  }
   .stelline{
     color: black;
   }
@@ -257,6 +262,8 @@ body{
   }
   
   .pricing .card {
+
+    width: 65%;
     border: none;
     border-radius: 1rem;
     transition: all 0.2s;
@@ -416,8 +423,29 @@ body{
     
   }
 
-  td {
-    border: none;
+  /* SWIPER */
+
+  .swiper {
+    width: 100%;
+    height: 80vh;
+    background: #FAFAFA;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #FAFAFA;
   }
 
   @media (min-width: 992px) {
