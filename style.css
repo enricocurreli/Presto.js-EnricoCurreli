@@ -114,6 +114,22 @@ body{
   .btn:first-child:active{
     border: none;
   }
+
+  .searchBtn{
+
+    background:#CC2936; 
+    font-weight: 600;
+    border-radius: 8px;
+    color: rgb(250, 250, 250 );
+    font-family: "Bitter", serif;
+
+  }
+
+  .searchBtn:hover{
+
+    border: 2px solid #CC2936;
+
+  }
   
   .btn_nav{
     background: #CC2936 !important;
@@ -194,6 +210,7 @@ body{
     font-size: 350%;
     text-align: center;
     letter-spacing: 5px;
+    background: #FAFAFA;
   
   }
 

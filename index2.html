@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prenotazione</title>
-
-   <!-- SWIPER CSS  -->
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <!-- SWIPER CSS  -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!--CDN AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--CDN BOOTSTRAP-->
@@ -52,120 +52,161 @@
       <div class="swiper-slide"><img src="media/deluxe.jpeg" alt=""></div>
       <div class="swiper-slide"><img src="media/piscina2.jpeg" alt=""></div>
       <!-- <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div> -->
-    </div>
- 
-  </div>
-
-  <!--FINE CAROUSEL-->
-
-  
-  <!-- SECTION-->
-  <section>
-    <div class="container-fluid my_ctn1 pt-5">
-      <div class="row justify-content-center pb-5 m-0">
-        <div class="col-12 d-flex justify-content-center">
-          
-          <h2 class="h2_sect2">Scegli il tuo soggiorno, al resto ci pensiamo noi!</h2>
-          
-        </div>
-      </div>
-    </div>  
-    <div class="container-fluid my_ctn1 pb-5">  
-      <div class="row justify-content-center m-0">
-        <div class="col-12 col-md-10 d-flex justify-content-center">
-          <p class="p_sect2 text-secondary">Ogni soggiorno ti concederà di vivere al meglio la tua vacanza, alla scoperta della nostra terra e tutte le sue meraviglie</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- FINE SECTION-->
-  
-  
-  <!-- <div class="container-fluid col-sfondo">
-    <div class="row">
-      <div class="col-12 col-sfondo">
-        
-      </div>
-    </div>
-  </div>
--->
-
-<div class="container-fluid">
-  <div class="row">
-    
-    <!-- FILTRI col-sx -->
-    <div class="col-12 col-lg-3 col-filtri">
-      <h2 class="text-center h2benessere2 my-5 ">FILTRI</h2>
-      
-      
-      <!-- FILTRI CAMERE -->
-      <div class="box-filtri position_sticky">
-
-        <div id="radioWrapper" class=" px-4">
-        
-          <h4 class="h2benessere2   mt-5 mb-3">CAMERE</h4>
-          <div class="form-check">
-            <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="All" checked>
-            <label class="form-check-label h2benessere2 fs-5" for="All">
-              Tutte le camere
-            </label>
-          </div>
-          
-        </div>
-
-        
-        
-        <!-- FILTRI PREZZO   -->
-        
-        
-        <div class="px-4" >
-          <h4 class="h2benessere2 mt-5 mb-3">PREZZO</h4>
-          
-          
-          <input id="inputPrice" type="range" class="form-range"  max="" min="" value="">
-          <label for="customRange1" class="form-label h2benessere2 fs-5"> €<span id="currentValue"></span></label>
-        </div>
-
-        <!-- FILTRI PENSIONE -->
-
-        <div id="radioWrapper2" class=" px-4 pb-3">
-        
-          <h4 class="h2benessere2   mt-5 mb-3">PENSIONE</h4>
-          <div class="form-check">
-            <input class="form-check-input check2 fs-6" type="radio" name="flexRadioSecond" id="ALL" checked>
-            <label class="form-check-label h2benessere2 fs-5" for="ALL">
-              Tutte le opzioni
-            </label>
-          </div>
-          
-        </div>
-       
-
-
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div> -->
       </div>
       
     </div>
     
-    <!-- OPZ STANZE col dx -->
-    <div class="col-12 col-lg-8  pb-3">
-      <h2 class="text-center h2benessere2 my-5">LE CAMERE</h2>
-      <div class="container-fluid">
-        <div class="row justify-content-between ps-5 pricing" id="roomsWrapper">
-          <!--camere-->
+    <!--FINE CAROUSEL-->
+    
+    
+    <!-- SECTION-->
+    <section>
+      <div class="container-fluid my_ctn1 pt-5">
+        <div class="row justify-content-center pb-5 m-0">
+          <div class="col-12 d-flex justify-content-center">
+            
+            <h2 class="h2_sect2">Scegli il tuo soggiorno, al resto ci pensiamo noi!</h2>
+            
+          </div>
+        </div>
+      </div>  
+      <div class="container-fluid my_ctn1 pb-5">  
+        <div class="row justify-content-center m-0">
+          <div class="col-12 col-md-10 d-flex justify-content-center">
+            <p class="p_sect2 text-secondary">Ogni soggiorno ti concederà di vivere al meglio la tua vacanza, alla scoperta della nostra terra e tutte le sue meraviglie</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FINE SECTION-->
+    
+    
+    <div class="container-fluid box-booking">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h2benessere2  text-center my-5 pb-5">VERIFICA LA DISPONIBILITA'</h3>
+          
+          
+        </div>
+      </div>
+      <div class="row mb-5 pb-5 h2benessere2 justify-content-center booking-direct">
+
+        <div class="col-lg-3">
+          
+          <form class="fs-5 ps-3">
+            <label for="arrivo" class="fs-5">ARRIVO:</label>
+            <input type="date" id="arrivo" name="arrivo" class="my-3 text-center">
+          </form>
+
+         
+
+        </div>
+
+        <div class="col-lg-3">
+          <form class="fs-5 ps-3">
+            <label for="partenza" class="fs-5 text-center">PARTENZA:</label>
+            <input type="date" id="partenza" name="partenza" class="my-3 text-center">
+          </form>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+
+          <label for="inputState" class="form-label fs-5 mb-0 mx-2">PERSONE:</label>
+          <select id="inputState" class="form-select w-25 fs-6 text-center">
+            <option selected>Scegli</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          
+        </div>
+
+        <div class="col-lg-2 d-flex justify-content-start align-items-end col-btnSearch">
+
+          <a class="btn searchBtn mb-3 p-2" href="#" role="button">CERCA</a>
+          
+        </div>
+
+      </div>
+    </div>
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        
+        <!-- FILTRI col-sx -->
+        <div class="col-12 col-lg-3 col-filtri">
+          <h2 class="text-center h2benessere2 my-5 ">FILTRI</h2>
+          
+          
+          <!-- FILTRI CAMERE -->
+          <div class="box-filtri position_sticky mb-5">
+            
+            <div id="radioWrapper" class=" px-4">
+              
+              <h4 class="h2benessere2   mt-5 mb-3">CAMERE</h4>
+              <div class="form-check">
+                <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="All" checked>
+                <label class="form-check-label h2benessere2 fs-5" for="All">
+                  Tutte le camere
+                </label>
+              </div>
+              
+            </div>
+            
+            
+            
+            <!-- FILTRI PREZZO   -->
+            
+            
+            <div class="px-4" >
+              <h4 class="h2benessere2 mt-5 mb-3">PREZZO</h4>
+              
+              
+              <input id="inputPrice" type="range" class="form-range"  max="" min="" value="">
+              <label for="customRange1" class="form-label h2benessere2 fs-5"> €<span id="currentValue"></span></label>
+            </div>
+            
+            <!-- FILTRI PENSIONE -->
+            
+            <div id="radioWrapper2" class=" px-4 pb-3">
+              
+              <h4 class="h2benessere2   mt-5 mb-3">PENSIONE</h4>
+              <div class="form-check">
+                <input class="form-check-input check2 fs-6" type="radio" name="flexRadioSecond" id="ALL" checked>
+                <label class="form-check-label h2benessere2 fs-5" for="ALL">
+                  Tutte le opzioni
+                </label>
+              </div>
+              
+            </div>
+            
+            
+            
+          </div>
+          
+        </div>
+        
+        <!-- OPZ STANZE col dx -->
+        <div class="col-12 col-lg-8  pb-3">
+          <h2 class="text-center h2benessere2 my-5">LE CAMERE</h2>
+          <div class="container-fluid">
+            <div class="row justify-content-between ps-5 pricing" id="roomsWrapper">
+              <!--camere-->
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-
- 
-  
+    
+    
+    
+    
     <!-- <tbody id="bookingWrapper"> -->
-
+      
       <!-- <tr>
         <th scope="row">1</th>
         <td>Fabrizio</td>
@@ -181,13 +222,13 @@
         <td>0</td>
         <td>0</td>
       </tr> -->
-
-    <!-- </tbody>
-  </table>
+      
+      <!-- </tbody>
+      </table>
     </div>
   </div>
   
- </div> -->
+</div> -->
 
 
 
