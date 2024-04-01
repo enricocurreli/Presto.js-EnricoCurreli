@@ -116,12 +116,12 @@ body{
   }
 
   .searchBtn{
-
+    font-family: "Bitter", serif;
     background:#CC2936; 
     font-weight: 600;
     border-radius: 8px;
     color: rgb(250, 250, 250 );
-    font-family: "Bitter", serif;
+    
 
   }
 
